@@ -1,6 +1,6 @@
 .container {
   display: inline-block;
-  width: 1440px;
+  max-width: 1440px;
   min-height: 569px;
   color: #ffffff;
 }
@@ -20,34 +20,24 @@
 }
 
 .wrapper {
-  margin-top: 80px;
-  margin-left: auto;
-  margin-right: auto;
-  padding-left: 0;
-  width: 1264px;
-  background: darkkhaki;
-  list-style: none;
+  padding: 80px 0 0 0;
+  font-size: 0;
+  text-align: center;
 }
 
 .rectangle {
   display: inline-block;
   width: 296px;
-  background: brown;
-    }
+}
 
 .image {
   width: 100px;
   height: 100px;
-  margin-left: 98px;
-  background: blueviolet;
 }
 
 .subtitle {
-  display: block;
   margin: 48px auto 0 auto;
-  text-align: center;
   font-size: 24px;
   line-height: 28px;
   color: #383838;
 }
-
