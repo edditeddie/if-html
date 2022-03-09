@@ -1,15 +1,17 @@
 .container {
-  display: inline-block;
+  display: block;
   max-width: 1440px;
   min-height: 569px;
   color: #ffffff;
 }
 
 .text {
-  margin: 120px 567px 0 567px;
-  width: 306px;
+  font-family: "Roboto-medium", sans-serif;
+  margin: 120px auto 0 auto;
+  text-align: center;
   color: #383838;
   font-size: 40px;
+  line-height: 47px;
 }
 
 .h {
@@ -36,8 +38,56 @@
 }
 
 .subtitle {
+  font-family: Roboto-regular, sans-serif;
   margin: 48px auto 0 auto;
   font-size: 24px;
   line-height: 28px;
   color: #383838;
+}
+
+/* footer (lesson-5) */
+.footer {
+  display: block;
+  max-width: 1440px;
+  min-height: 630px;
+  background: #10367c;
+}
+
+.rectangle-f {
+  display: flex;
+  justify-content: space-between;
+  padding: 120px 272px 0 104px;
+}
+
+.flex-container {
+  display: flex;
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+  flex-direction: column;
+}
+
+.subtitle-f {
+  font-family: "Roboto-medium", sans-serif;
+  margin: 12px 0 12px 0;
+  justify-content: flex-start;
+  color: #ffffff;
+  size: 20px;
+  line-height: 23.44px;
+}
+
+.flex-item {
+  font-family: Roboto-regular, sans-serif;
+  margin: 12px 0 12px 0;
+  size: 20px;
+  line-height: 23.44px;
+  color: #ffffff;
+}
+
+h5 {
+  font-family: Roboto-regular, sans-serif;
+  margin: 64px 0 0 103px;
+  size: 14px;
+  line-height: 16.41px;
+  color: #ffffff;
 }
