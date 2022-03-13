@@ -91,3 +91,39 @@ h5 {
   line-height: 16.41px;
   color: #ffffff;
 }
+
+/* footer (lesson-6) */
+.rectangle-top {
+  display: block;
+  max-width: 1440px;
+  height: 900px;
+  background-image: url("../pictures/top-section/castelmezzano.png");
+  background-color: #12121240;
+  object-fit: none;
+  background-position: center top;
+}
+
+.header{
+  display: flex;
+  justify-content: center;
+
+}
+
+.header-top {
+  display: inline;
+  list-style-type: none;
+  padding: 0;
+
+}
+
+.logo-1 {
+  width: 54px;
+  height: 54px;
+  background: url("../pictures/top-section/css_sprites (1).png") 0 0;
+  }
+
+.logo-2 {
+  width: 54px;
+  height: 54px;
+  background: url("../pictures/top-section/css_sprites (1).png") 205px 150px;
+}
