@@ -7,8 +7,9 @@
 
 .text {
   font-family: "Roboto", sans-serif;
-  font-size: 250%;
   font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17em;
   margin: 120px auto 0 auto;
   text-align: center;
   color: #383838;
@@ -38,8 +39,9 @@
 
 .subtitle {
   font-family: "Roboto", sans-serif;
-  font-size: 150%;
   font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
   margin: 48px auto 0 auto;
   color: #383838;
 }
@@ -77,32 +79,36 @@
 
 .subtitle-f1 {
   font-family: "Roboto", sans-serif;
-  font-size: 125%;
   font-weight: 500;
+  font-size: 20px;
+  line-height: 1.17em;
   margin: 0 0 0 0;
   color: #ffffff;
 }
 
 .subtitle-f2 {
   font-family: "Roboto", sans-serif;
-  font-size: 125%;
   font-weight: 500;
+  font-size: 20px;
+  line-height: 1.17em;
   margin: 0 0 5px 0;
   color: #ffffff;
 }
 
 .flex-item {
   font-family: "Roboto", sans-serif;
-  font-size: 125%;
   font-weight: 400;
+  font-size: 20px;
+  line-height: 1.17em;
   margin: 24px 0 0 0;
   color: #ffffff;
 }
 
 .text-f {
   font-family: "Roboto", sans-serif;
-  font-size: 88%;
   font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17em;
   margin: 64px 0 0 104px;
   color: #ffffff;
 }
