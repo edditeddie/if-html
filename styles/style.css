@@ -6,12 +6,13 @@
 }
 
 .text {
-  font-family: "Roboto-medium", sans-serif;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17em;
   margin: 120px auto 0 auto;
   text-align: center;
   color: #383838;
-  font-size: 40px;
-  line-height: 47px;
 }
 
 .h {
@@ -23,7 +24,6 @@
 
 .wrapper {
   padding: 80px 0 0 0;
-  font-size: 0;
   text-align: center;
 }
 
@@ -38,18 +38,19 @@
 }
 
 .subtitle {
-  font-family: Roboto-regular, sans-serif;
-  margin: 48px auto 0 auto;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
   font-size: 24px;
-  line-height: 28px;
+  line-height: 1.17em;
+  margin: 48px auto 0 auto;
   color: #383838;
 }
 
 /* footer (lesson-5) */
-.footer {
+.container-f {
   display: block;
   max-width: 1440px;
-  min-height: 630px;
+  padding-bottom: 120px;
   background: #10367c;
 }
 
@@ -59,36 +60,56 @@
   padding: 120px 272px 0 104px;
 }
 
-.flex-container {
+.container-1 {
   display: flex;
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
   flex-direction: column;
 }
 
-.subtitle-f {
-  font-family: "Roboto-medium", sans-serif;
-  margin: 12px 0 12px 0;
-  justify-content: flex-start;
+.flex-container {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.flex-container-2 {
+  padding: 0;
+  margin: 0;
+  list-style-type: none;
+}
+
+.subtitle-f1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.17em;
+  margin: 0 0 0 0;
   color: #ffffff;
-  size: 20px;
-  line-height: 23.44px;
+}
+
+.subtitle-f2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 20px;
+  line-height: 1.17em;
+  margin: 0 0 5px 0;
+  color: #ffffff;
 }
 
 .flex-item {
-  font-family: Roboto-regular, sans-serif;
-  margin: 12px 0 12px 0;
-  size: 20px;
-  line-height: 23.44px;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 1.17em;
+  margin: 24px 0 0 0;
   color: #ffffff;
 }
 
-h5 {
-  font-family: Roboto-regular, sans-serif;
-  margin: 64px 0 0 103px;
-  size: 14px;
-  line-height: 16.41px;
+.text-f {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17em;
+  margin: 64px 0 0 104px;
   color: #ffffff;
 }
 
