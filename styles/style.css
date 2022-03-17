@@ -114,75 +114,197 @@
 }
 
 /* footer (lesson-6) */
-.rectangle-top {
+.triphouse {
   display: block;
   max-width: 1440px;
-  height: 900px;
+  min-height: 100vh;
   background-image: url("../pictures/top-section/castelmezzano.png");
   background-color: #12121240;
-  object-fit: none;
-  background-position: center top;
+  background-repeat: no-repeat;
 }
 
-.header{
+.triphouse__body {
+  padding: 0 104px;
+}
+
+.triphouse__header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-
   padding: 51px 0 0 0;
-  margin: 0 104px;
-  background-color: #7a7aad;
 }
 
-.header-top {
+.triphouse__logo {
+  width: 206px;
+  height: 40px;
+  background: url("../pictures/top-section/css_sprites.png") -630px -10px;
+}
+
+.triphouse__menu {
   display: flex;
   flex-direction: row;
   align-items: center;
   list-style-type: none;
-  height: 40px;
-  padding: 0;
   margin: 0;
-
 }
 
-.logo-1 {
-  width: 205px;
-  height: 40px;
-  background: url("../pictures/top-section/css_sprites.png") -630px -10px;
-  background-color: chartreuse;
-  }
+.triphouse__menu li:hover {
+  border-bottom: 3px solid #f5bd41;
+}
 
-.logo-2, .logo-3 {
+.triphouse__menu-item1 {
   display: block;
-  font-family: Roboto-regular, sans-serif;
+  font-family: Roboto, sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.17em;
   margin: 0 24px 0 0;
-  color: #FFFFFF;
-  background-color: chartreuse;
+  color: #ffffff;
+  box-sizing: border-box;
 }
 
-.logo-4 {
+.triphouse__menu-item2 {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  margin: 0 24px 0 0;
+  color: #ffffff;
+}
+
+.triphouse__menu-item3 {
   width: 30px;
   height: 30px;
   margin: 0 0 0 24px;
   background: url("../pictures/top-section/css_sprites.png") -10px -10px;
-  background-color: chartreuse ;
 }
 
-.logo-5 {
+.triphouse__menu-item4 {
   width: 40px;
   height: 40px;
   margin: 0 0 0 24px;
   background: url("../pictures/top-section/css_sprites.png") -60px -10px;
-  background-color: chartreuse ;
- }
-
-.underline{
-  margin: 20px auto 0;
-  width: 100px;
-  height: 4px;
-  background: #f5bd41;
+  box-sizing: border-box;
 }
 
+.triphouse__title {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.17em;
+  margin: 202px 0 0 0;
+  color: #ffffff;
+}
+
+.search__items {
+  display: flex;
+  margin: 145px 0 0 0;
+  height: 64px;
+  border-radius: 8px;
+  background-color: #ffffff;
+  box-sizing: border-box;
+}
+
+.search__subtitle {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: #ffffff;
+  position: relative;
+  bottom: 46px;
+}
+
+.search__item1 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  width: 38%;
+  padding: 0 0 0 24px;
+}
+
+#search__input1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  border: none;
+  color: #383838;
+}
+
+.search__item2 {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+  border: 3px solid #f5bd41;
+  border-radius: 8px;
+  width: 20%;
+  padding-left: 24px;
+}
+
+#search__input2 {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  border: none;
+  color: #383838;
+}
+
+.search__item3 {
+  display: flex;
+  justify-content: center;
+  width: 27%;
+}
+
+.search__input3 {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  border: none;
+  color: #383838;
+}
+
+.search__item4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: #3077c6;
+  width: 16%;
+  border-radius: 8px;
+}
+
+.search__button1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #ffffff;
+  background: #3077c6;
+  border: none;
+}
+
+.footer {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0;
+}
+
+.footer__image1 {
+  width: 135px;
+  height: 40px;
+  padding: 0 8px;
+  background: url("../pictures/top-section/css_sprites.png") -474px -10px;
+}
+
+.footer__image2 {
+  width: 120px;
+  height: 40px;
+  margin: 0 8px;
+  background: url("../pictures/top-section/css_sprites.png") -334px -10px;
+}
