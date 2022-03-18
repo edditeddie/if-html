@@ -118,7 +118,7 @@
   display: block;
   max-width: 1440px;
   min-height: 100vh;
-  background-image: url("../pictures/top-section/castelmezzano.png");
+  background-image: url("../pictures/top-section/castelmezzano1.png");
   background-color: #12121240;
   background-repeat: no-repeat;
 }
@@ -137,7 +137,7 @@
 .triphouse__logo {
   width: 206px;
   height: 40px;
-  background: url("../pictures/top-section/css_sprites.png") -630px -10px;
+  background: url("../pictures/top-section/css_sprites1.png") -630px -10px;
 }
 
 .triphouse__menu {
@@ -177,14 +177,14 @@
   width: 30px;
   height: 30px;
   margin: 0 0 0 24px;
-  background: url("../pictures/top-section/css_sprites.png") -10px -10px;
+  background: url("../pictures/top-section/css_sprites1.png") -10px -10px;
 }
 
 .triphouse__menu-item4 {
   width: 40px;
   height: 40px;
   margin: 0 0 0 24px;
-  background: url("../pictures/top-section/css_sprites.png") -60px -10px;
+  background: url("../pictures/top-section/css_sprites1.png") -60px -10px;
   box-sizing: border-box;
 }
 
@@ -299,12 +299,12 @@
   width: 135px;
   height: 40px;
   padding: 0 8px;
-  background: url("../pictures/top-section/css_sprites.png") -474px -10px;
+  background: url("../pictures/top-section/css_sprites1.png") -474px -10px;
 }
 
 .footer__image2 {
   width: 120px;
   height: 40px;
   margin: 0 8px;
-  background: url("../pictures/top-section/css_sprites.png") -334px -10px;
+  background: url("../pictures/top-section/css_sprites1.png") -334px -10px;
 }
