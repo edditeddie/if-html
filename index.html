@@ -239,22 +239,26 @@
           Discover stays <br />
           to live, work or just relax
         </div>
-        <div class="search__items">
-          <div class="search__item1">
-            <label class="search__subtitle" for="search__input1">Your destination or hotel name</label>
-            <input id="search__input1" name="name" type="text" placeholder="New York" required />
-          </div>
-          <div class="search__item2">
-            <label class="search__subtitle" for="search__input2">Check-in — Check-out</label>
-            <input id="search__input2" name="name" type="text" placeholder="Tue 15 Sept — Sat 19 Sept" required />
-          </div>
-          <div class="search__item3">
-            <input class="search__input3" name="name" type="text" placeholder="2 Adults — 0 Children — 1 Room" required />
-          </div>
-          <div class="search__item4">
-            <button class="search__button1" type="submit">Search</button>
-          </div>
-        </div>
+        <form action="/index.html" method="get">
+          <fieldset class="search">
+            <div class="search__items">
+              <div class="search__item1">
+                <label class="search__subtitle1" for="search__input1">Your destination or hotel name</label>
+                <input id="search__input1" name="name" type="text" placeholder="New York" required />
+              </div>
+              <div class="search__item2">
+                <label class="search__subtitle2" for="search__input2">Check-in — Check-out</label>
+                <input id="search__input2" name="name" type="text" placeholder="Tue 15 Sept — Sat 19 Sept" required />
+              </div>
+              <div class="search__item3">
+                <input class="search__input3" name="name" type="text" placeholder="2 Adults — 0 Children — 1 Room" required />
+              </div>
+              <div class="search__item4">
+                <button class="search__button1" type="submit">Search</button>
+              </div>
+            </div>
+          </fieldset>
+        </form>
         <div class="footer">
           <div class="footer__image1"></div>
           <div class="footer__image2"></div>
