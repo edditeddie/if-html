@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="author" content="Shchurski Eduard" />
@@ -9,158 +9,55 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <h1>Lesson 1</h1>
-    <p>
-      Здравствуйте, меня зовут Эдуард, мне 25 лет, и я изучаю направление
-      Front-end разработку. <a href="about/index.html">Об авторе</a>
-    </p>
-    <p></p>
-    <h2>Lesson 2</h2>
-    <hr />
-    <img
-      src="https://gol.ru/images/thumbs/materials/sections/79553/user1220x0_79553.webp"
-      alt="green field"
-    />
-    <ol>
-      <li>
-        Знакомство с WEB
-        <ul>
-          <li>Краткая история WEB и что такое интернет.</li>
-          <li>Как устроен браузер и как он получает страницы по сети.</li>
-          <li>Что такое Git?</li>
-          <li>Создание первого репозитория.</li>
-          <li>О файле .gitignore.</li>
+    <div class="triphouse">
+    <div class="triphouse__body">
+      <header class="triphouse__header">
+        <div class="triphouse__logo"></div>
+        <ul class="triphouse__menu">
+          <li class="triphouse__menu-item1">Stays</li>
+          <li class="triphouse__menu-item2">Attractions</li>
+          <li class="triphouse__menu-item3"></li>
+          <li class="triphouse__menu-item4"></li>
         </ul>
-      </li>
-      <li>
-        НТМL-вёрстка — первые шаги
-        <ul>
-          <li>Настройка рабочей среды.</li>
-          <li>Краткая история НТМL.</li>
-          <li>Какие бывают теги и что такое атрибут.</li>
-          <li>Теги для работы с текстом.</li>
-          <li>Создание собственной страницы.</li>
-        </ul>
-      </li>
-      <li>
-        Погружение в НТМL-разметку
-        <ul>
-          <li>Мета-теги.</li>
-          <li>Мнемоники.</li>
-          <li>Тег для работы с изображениями.</li>
-          <li>Теги для работы со списками.</li>
-          <li>Теги для работы с таблицами.</li>
-          <li>Теги для работы с формами.</li>
-          <li>Div-блоки.</li>
-        </ul>
-      </li>
-    </ol>
-    <table border="1" width="40%">
-      <thead>
-        <tr>
-          <th>Tag</th>
-          <th>Description</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <td>&#8249;table&#8250;</td>
-          <td>Defines a table</td>
-        </tr>
-        <tr>
-          <td>&#8249;tr&#8250;</td>
-          <td>Defines a row in a table</td>
-        </tr>
-        <tr>
-          <td>&#8249;th&#8250;</td>
-          <td rowspan="2">Defines a "header cell"/"cell" in a table</td>
-        </tr>
-        <tr>
-          <td>&#8249;td&#8250;</td>
-        </tr>
-        <tr>
-          <td colspan="2">Rarely used</td>
-        </tr>
-        <tr>
-          <td>&#8249;caption&#8250;</td>
-          <td>Defines a table caption</td>
-        </tr>
-        <tr>
-          <td>&#8249;thead&#8250;</td>
-          <td>Groups the header content in a table</td>
-        </tr>
-        <tr>
-          <td>&#8249;tbody&#8250;</td>
-          <td>Groups the body content in a table</td>
-        </tr>
-        <tr>
-          <td>&#8249;tfoot&#8250;</td>
-          <td>Groups the footer content in a table</td>
-        </tr>
-      </tbody>
-    </table>
-    <p></p>
-    <form action="/index.html" method="get">
-      <fieldset>
-        <legend>My first form</legend>
-        <label for="name">Name</label> <br />
-        <input id="name" name="name" type="text" placeholder="Name" required />
-        <br />
-        <label for="email">Email</label> <br />
-        <input id="email" name="email" type="email" required />
-        <br />
-        <label for="password">Password</label> <br />
-        <input id="password" name="password" type="password" required />
-        <br />
-        <label for="programming_level">Your programming level?</label> <br />
-        <input
-          id="programming_level"
-          name="level"
-          type="range"
-          min="1"
-          max="10"
-        />
-        <p>What does HTML stand for?</p>
-        <p>
-          <input id="html_1" name="HTML" type="checkbox" value="1" />
-          <label for="html_1">Hyperlinks and Text Markup Language</label>
-          <br />
-          <input id="html_2" name="HTML" type="checkbox" value="2" />
-          <label for="html_2">Home Tool Markup Language</label>
-          <br />
-          <input id="html_3" name="HTML" type="checkbox" value="3" />
-          <label for="html_3">Hyper Text Markup Language</label>
-        </p>
-        <p>What does HTTP stand for?</p>
-        <input id="http_1" name="HTTP" type="radio" value="1" />
-        <label for="http_1">Hyper Text Translate Protocol</label>
-        <br />
-        <input id="http_2" name="HTTP" type="radio" value="2" />
-        <label for="http_2">Hyper Text Trancmission Protocol</label>
-        <br />
-        <input id="http_3" name="HTTP" type="radio" value="3" />
-        <label for="http_3">Hyper Text Transfer Protocol</label>
-        <br />
-        <label for="comment">Comment</label> <br />
-        <textarea
-          id="comment"
-          name="comment"
-          placeholder="Comment"
-          maxlength="500"
-        ></textarea
-        ><br />
-        <label for="select_HTML">What does HTML stand for?</label>
-        <br />
-        <select id="select_HTML" name="select_HTML">
-          <option disabled selected>Your Answer</option>
-          <option value="2">Hyperlinks and Text Markup Language</option>
-          <option value="3">Home Tool Markup Language</option>
-          <option value="4">Hyper Text Markup Language</option>
-        </select>
-        <p><button type="submit">Send</button></p>
-      </fieldset>
-    </form>
-    <hr />
+      </header>
+      <div class="triphouse__title">
+        Discover stays <br />
+        to live, work or just relax
+      </div>
+      <form class="search" action=/"index.html" method="get">
+       <div class="search__items">
+            <div class="search__item1">
+              <label class="search__subtitle1" for="search__input1">Your destination or hotel name</label>
+              <input class="search__input search__input1" id="search__input1" list="search__input1" placeholder="New York" required>
+              <datalist id="search__input1">
+                <option value="New York">
+                <option value="London">
+                <option value="Paris">
+                <option value="Tokio">
+                <option value="Berlin">
+                <option value="Madrid">
+                <option value="Wien">
+                <option value="Lyon">
+              </datalist>
+            </div>
+            <div class="search__item2">
+              <label class="search__subtitle2" for="search__input2">Check-in — Check-out</label>
+              <input class="search__input search__input2" id="search__input2" type="date" placeholder="Check-in — Check-out" required>
+            </div>
+            <div class="search__item3">
+              <input class="search__input search__input3" name="name" type="text" placeholder="2 Adults — 0 Children — 1 Room" required />
+            </div>
+            <div class="search__item4">
+              <button class="search__button1" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+      <div class="triphouse__footer">
+        <div class="triphouse__google"></div>
+        <div class="triphouse__apple"></div>
+      </div>
+    </div>
+  </div>
     <section>
       <!-- lesson-4 -->
       <div class="container">
@@ -188,7 +85,7 @@
         </ul>
       </div>
     </section>
-    <footer>
+    <footer class="footer">
       <!-- lesson-5 -->
       <div class="container-f">
         <div class="rectangle-f">
@@ -223,47 +120,5 @@
         <p class="text-f">&#169; 2020 Triphouse, Inc. All rights reserved</p>
       </div>
     </footer>
-    <!-- lesson-6 -->
-    <div class="triphouse">
-      <div class="triphouse__body">
-        <div class="triphouse__header">
-          <div class="triphouse__logo"></div>
-          <ul class="triphouse__menu">
-            <li class="triphouse__menu-item1">Stays</li>
-            <li class="triphouse__menu-item2">Attractions</li>
-            <li class="triphouse__menu-item3"></li>
-            <li class="triphouse__menu-item4"></li>
-          </ul>
-        </div>
-        <div class="triphouse__title">
-          Discover stays <br />
-          to live, work or just relax
-        </div>
-        <form action="/index.html" method="get">
-          <fieldset class="search">
-            <div class="search__items">
-              <div class="search__item1">
-                <label class="search__subtitle1" for="search__input1">Your destination or hotel name</label>
-                <input id="search__input1" name="name" type="text" placeholder="New York" required />
-              </div>
-              <div class="search__item2">
-                <label class="search__subtitle2" for="search__input2">Check-in — Check-out</label>
-                <input id="search__input2" name="name" type="text" placeholder="Tue 15 Sept — Sat 19 Sept" required />
-              </div>
-              <div class="search__item3">
-                <input class="search__input3" name="name" type="text" placeholder="2 Adults — 0 Children — 1 Room" required />
-              </div>
-              <div class="search__item4">
-                <button class="search__button1" type="submit">Search</button>
-              </div>
-            </div>
-          </fieldset>
-        </form>
-        <div class="footer">
-          <div class="footer__image1"></div>
-          <div class="footer__image2"></div>
-        </div>
-      </div>
-    </div>
   </body>
 </html>
