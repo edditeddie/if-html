@@ -1,5 +1,11 @@
+* {
+  margin: 0;
+  box-sizing: border-box;
+}
+
 .container {
   display: block;
+  margin: auto;
   max-width: 1440px;
   min-height: 569px;
   color: #ffffff;
@@ -47,16 +53,23 @@
 }
 
 /* footer (lesson-5) */
-.container-f {
+.footer {
   display: block;
-  max-width: 1440px;
   padding-bottom: 120px;
-  background: #10367c;
+  background-color: #10367c;
+
+}
+
+.container-f {
+  max-width: 1440px;
+  margin: auto;
 }
 
 .rectangle-f {
+  min-width: 100%;
   display: flex;
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 223px;
   padding: 120px 272px 0 104px;
 }
 
@@ -112,3 +125,232 @@
   margin: 64px 0 0 104px;
   color: #ffffff;
 }
+
+/* footer (lesson-6) */
+.triphouse {
+  display: block;
+  min-height: 100vh;
+  background-image: url("../pictures/top-section/castelmezzano1.png");
+  background-color: #12121240;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.triphouse__body {
+  margin: auto;
+  max-width: 1440px;
+  padding: 0 104px 120px;
+}
+
+.triphouse__header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 51px 0 0 0;
+}
+
+.triphouse__logo {
+  width: 206px;
+  height: 40px;
+  background: url("../pictures/top-section/css_sprites1.png") -630px -10px;
+}
+
+.triphouse__menu {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  list-style-type: none;
+  margin: 0;
+}
+
+.triphouse__menu li {
+  position: relative;
+  display: block;
+  text-decoration: none;
+  font-size: 1.5em;
+  color: #FFFFFF;
+  transition: 0.2s;
+}
+.triphouse__menu li::after {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 4px;
+  top: 100%;
+  left: 0;
+  background: #F5BD41;
+  transition: transform 0.5s;
+  transform: scaleX(0);
+  transform-origin: right;
+}
+
+.triphouse__menu li:hover::after {
+  transform: scaleX(1);
+  transform-origin: left;
+}
+
+.triphouse__menu-item1 {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  margin: 0 24px 0 0;
+  color: #ffffff;
+  box-sizing: border-box;
+}
+
+.triphouse__menu-item2 {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  margin: 0 24px 0 0;
+  color: #ffffff;
+}
+
+.triphouse__menu-item3 {
+  width: 30px;
+  height: 30px;
+  margin: 0 0 0 24px;
+  background: url("../pictures/top-section/css_sprites1.png") -10px -10px;
+}
+
+.triphouse__menu-item4 {
+  width: 40px;
+  height: 40px;
+  margin: 0 0 0 24px;
+  background: url("../pictures/top-section/css_sprites1.png") -60px -10px;
+  box-sizing: border-box;
+}
+
+.triphouse__title {
+  display: block;
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 1.17em;
+  margin: 202px 0 0 0;
+  color: #ffffff;
+}
+
+.triphouse__footer {
+  display: flex;
+  justify-content: center;
+  margin: 120px 0 0;
+}
+
+.triphouse__google {
+  width: 135px;
+  height: 40px;
+  padding: 0 8px;
+  background: url("../pictures/top-section/css_sprites1.png") -474px -10px;
+}
+
+.triphouse__apple {
+  width: 120px;
+  height: 40px;
+  margin: 0 8px;
+  background: url("../pictures/top-section/css_sprites1.png") -334px -10px;
+}
+
+.search__items {
+  display: flex;
+  margin: 145px 0 0 0;
+  max-width: 100%;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  border-radius: 8px;
+  }
+
+.search__subtitle1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: #ffffff;
+  position: absolute;
+  top: -45px;
+  left: 24px;
+}
+
+.search__subtitle2 {
+  white-space: nowrap;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: #ffffff;
+  position: absolute;
+  top: -45px;
+  left: 24px;
+}
+
+.search__item1 {
+  display: block;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  width: 38%;
+ }
+.search__input{
+  display: block;
+  height: 64px;
+  width: 100%;
+  text-align: left;
+  font-family: Roboto, sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  border: 3px solid transparent;
+  border-radius: 8px;
+  padding: 0 24px;
+  color: #383838;
+}
+
+.search__input2 {
+  border: 3px solid #CECECE;
+}
+
+.search__input:focus{
+  outline: none;
+  border-color: #F5BD41;
+  }
+
+.search__item2 {
+  display: flex;
+  position: relative;
+  flex-direction: column;
+  box-sizing: border-box;
+  border-radius: 8px;
+  width: 21%;
+ }
+
+.search__item3 {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  width: 26%;
+}
+
+.search__item4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #ffffff;
+  background: #3077c6;
+  width: 15%;
+  border-radius: 8px;
+}
+
+.search__button1 {
+  font-family: Roboto, sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #ffffff;
+  background: #3077c6;
+  border: none;
+}
+
