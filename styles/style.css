@@ -1,132 +1,7 @@
 * {
   margin: 0;
   box-sizing: border-box;
-}
 
-.container {
-  display: block;
-  margin: auto;
-  max-width: 1440px;
-  min-height: 569px;
-  color: #ffffff;
-}
-
-.text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17em;
-  margin: 120px auto 0 auto;
-  text-align: center;
-  color: #383838;
-}
-
-.h {
-  margin: 20px auto 0;
-  width: 100px;
-  height: 4px;
-  background: #f5bd41;
-}
-
-.wrapper {
-  padding: 80px 0 0 0;
-  text-align: center;
-}
-
-.rectangle {
-  display: inline-block;
-  width: 296px;
-}
-
-.image {
-  width: 100px;
-  height: 100px;
-}
-
-.subtitle {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.17em;
-  margin: 48px auto 0 auto;
-  color: #383838;
-}
-
-/* footer (lesson-5) */
-.footer {
-  display: block;
-  padding-bottom: 120px;
-  background-color: #10367c;
-
-}
-
-.container-f {
-  max-width: 1440px;
-  margin: auto;
-}
-
-.rectangle-f {
-  min-width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 223px;
-  padding: 120px 272px 0 104px;
-}
-
-.container-1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.flex-container-2 {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.subtitle-f1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.17em;
-  margin: 0 0 0 0;
-  color: #ffffff;
-}
-
-.subtitle-f2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.17em;
-  margin: 0 0 5px 0;
-  color: #ffffff;
-}
-
-.flex-item {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.17em;
-  margin: 24px 0 0 0;
-  color: #ffffff;
-}
-
-.text-f {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17em;
-  margin: 64px 0 0 104px;
-  color: #ffffff;
-}
-
-/* footer (lesson-6) */
 .triphouse {
   display: block;
   min-height: 100vh;
@@ -262,7 +137,7 @@
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 8px;
-  }
+}
 
 .search__subtitle1 {
   font-family: Roboto, sans-serif;
@@ -293,7 +168,7 @@
   flex-direction: column;
   box-sizing: border-box;
   width: 38%;
- }
+}
 .search__input{
   display: block;
   height: 64px;
@@ -316,7 +191,7 @@
 .search__input:focus{
   outline: none;
   border-color: #F5BD41;
-  }
+}
 
 .search__item2 {
   display: flex;
@@ -325,7 +200,7 @@
   box-sizing: border-box;
   border-radius: 8px;
   width: 21%;
- }
+}
 
 .search__item3 {
   display: flex;
@@ -354,8 +229,6 @@
   border: none;
 }
 
-
-/* footer (lesson7) */
 /* Offer */
 .offer {
   display: block;
@@ -433,34 +306,34 @@
 }
 
 /* footer-2 */
-.footer-2 {
+.footer {
   display: block;
   padding-bottom: 120px;
   background: #10367c;
 }
 
-.footer-2__logo{
+.footer__logo{
  font-size: 0;
 }
 
-.footer-2__rectangle {
+.footer__rectangle {
   display: flex;
   justify-content: space-between;
   padding: 120px 104px 0 104px;
 }
 
-.footer-2__container {
+.footer__container {
   display: flex;
   flex-direction: column;
 }
 
-.item-footer-2 {
+.item-footer {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.footer-2__subtitle-1 {
+.footer__subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -469,16 +342,7 @@
   color: #ffffff;
 }
 
-.footer-2__subtitle-2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.17em;
-  margin: 0 0 5px 0;
-  color: #ffffff;
-}
-
-.item__footer-2-text {
+.item__footer-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -487,7 +351,7 @@
   color: #ffffff;
 }
 
-.footer-2-text {
+.footer-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -593,13 +457,13 @@
     font-size: 0;
   }
 
-  .footer-2__rectangle {
+  .footer__rectangle {
     display: flex;
     justify-content: space-around;
     padding: 120px 0 0 0;
   }
 
-  .footer-2-text {
+  .footer-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -691,29 +555,29 @@
   }
 
   /* footer-2-mobile phones*/
-  .footer-2 {
+  .footer {
     display: block;
     padding: 32px 0 40px 0;
     background: #10367c;
     }
 
-  .footer-2__logo{
+  .footer__logo{
     margin: 0 auto;
     width: 98px;
     height: 19px;
     background: url("../pictures/offer/sprites-offer-small.png") -280px 0;
      }
 
-  .footer-2__rectangle {
+  .footer__rectangle {
     padding: 40px 0 0 0;
     text-align: center;
   }
 
-  .item__footer-2-text {
+  .item__footer-text {
     display: none;
   }
 
-  .footer-2__subtitle-1, .footer-2__subtitle-2 {
+  .footer__subtitle {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -723,7 +587,7 @@
     color: #ffffff;
   }
 
-  .footer-2-text {
+  .footer-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
@@ -733,3 +597,4 @@
     color: #ffffff;
   }
 }
+
