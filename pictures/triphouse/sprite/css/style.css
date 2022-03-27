@@ -1,0 +1,71 @@
+/* --------------------------------
+
+Generated using nucleoapp.com
+
+-------------------------------- */
+.icon {
+    display: inline-block;
+    background-image: url(../icons.svg);
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.icon.icon-google-play-badge {
+    background-position: -0px 0px;
+    height: 40px;
+    width: 135px;
+}
+
+.icon.icon-glass {
+    background-position: -135px 0px;
+    height: 16px;
+    width: 16px;
+}
+
+.icon.icon-apple {
+    background-position: -151px 0px;
+    height: 40px;
+    width: 120px;
+}
+
+.icon.icon-night {
+    background-position: -271px 0px;
+    height: 30px;
+    width: 30px;
+}
+
+.icon.icon-night-moblie {
+    background-position: -301px 0px;
+    height: 16px;
+    width: 16px;
+}
+
+.icon.icon-menu-moblie {
+    background-position: -317px 0px;
+    height: 16px;
+    width: 24px;
+}
+
+.icon.icon-logo_vector {
+    background-position: -341px 0px;
+    height: 40px;
+    width: 205px;
+}
+
+.icon.icon-logo_vector-moblie {
+    background-position: -546px 0px;
+    height: 24px;
+    width: 122px;
+}
+
+.icon.icon-accountCircle {
+    background-position: -668px 0px;
+    height: 40px;
+    width: 40px;
+}
+
+.icon.icon-accountcircle-moblie {
+    background-position: -708px 0px;
+    height: 24px;
+    width: 24px;
+} 

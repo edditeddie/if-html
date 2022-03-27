@@ -5,11 +5,11 @@
     <meta name="author" content="Shchurski Eduard" />
     <meta name="keywords" content="HTML,CSS" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lesson 1</title>
+    <title>Lesson-8</title>
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-  <div class="triphouse">
+    <div class="triphouse">
     <div class="triphouse__body">
       <header class="triphouse__header">
         <div class="triphouse__logo"></div>
@@ -24,12 +24,12 @@
         Discover stays <br />
         to live, work or just relax
       </div>
-      <form class="search" action=/"index.html" method="get">
+      <form class="search" action="index.html" method="get">
         <div class="search__items">
-          <div class="search__item1">
+          <div class="col-4 search__item1">
             <label class="search__subtitle1" for="search__input1">Your destination or hotel name</label>
-            <input class="search__input search__input1" id="search__input1" list="search__input1" placeholder="New York" required>
-            <datalist id="search__input1">
+            <input class="search__input search__input" id="search__input1" list="search__input" placeholder="New York" required>
+            <datalist id="search__input">
               <option value="New York">
               <option value="London">
               <option value="Paris">
@@ -40,14 +40,14 @@
               <option value="Lyon">
             </datalist>
           </div>
-          <div class="search__item2">
+          <div class="col-3 search__item2">
             <label class="search__subtitle2" for="search__input2">Check-in — Check-out</label>
             <input class="search__input search__input2" id="search__input2" type="date" placeholder="Check-in — Check-out" required>
           </div>
-          <div class="search__item3">
+          <div class="col-3 search__item3">
             <input class="search__input search__input3" name="name" type="text" placeholder="2 Adults — 0 Children — 1 Room" required />
           </div>
-          <div class="search__item4">
+          <div class="col-3 search__item4">
             <button class="search__button1" type="submit">Search</button>
           </div>
         </div>
