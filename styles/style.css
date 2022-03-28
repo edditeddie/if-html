@@ -3,134 +3,10 @@
   box-sizing: border-box;
 }
 
-.container {
-  display: block;
-  margin: auto;
-  max-width: 1440px;
-  min-height: 569px;
-  color: #ffffff;
-}
-
-.text {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 40px;
-  line-height: 1.17em;
-  margin: 120px auto 0 auto;
-  text-align: center;
-  color: #383838;
-}
-
-.h {
-  margin: 20px auto 0;
-  width: 100px;
-  height: 4px;
-  background: #f5bd41;
-}
-
-.wrapper {
-  padding: 80px 0 0 0;
-  text-align: center;
-}
-
-.rectangle {
-  display: inline-block;
-  width: 296px;
-}
-
-.image {
-  width: 100px;
-  height: 100px;
-}
-
-.subtitle {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.17em;
-  margin: 48px auto 0 auto;
-  color: #383838;
-}
-
-/* footer (lesson-5) */
-.footer {
-  display: block;
-  padding-bottom: 120px;
-  background-color: #10367c;
-
-}
-
-.container-f {
-  max-width: 1440px;
-  margin: auto;
-}
-
-.rectangle-f {
-  min-width: 100%;
-  display: flex;
-  justify-content: flex-start;
-  gap: 223px;
-  padding: 120px 272px 0 104px;
-}
-
-.container-1 {
-  display: flex;
-  flex-direction: column;
-}
-
-.flex-container {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.flex-container-2 {
-  padding: 0;
-  margin: 0;
-  list-style-type: none;
-}
-
-.subtitle-f1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.17em;
-  margin: 0 0 0 0;
-  color: #ffffff;
-}
-
-.subtitle-f2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.17em;
-  margin: 0 0 5px 0;
-  color: #ffffff;
-}
-
-.flex-item {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 20px;
-  line-height: 1.17em;
-  margin: 24px 0 0 0;
-  color: #ffffff;
-}
-
-.text-f {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 1.17em;
-  margin: 64px 0 0 104px;
-  color: #ffffff;
-}
-
-/* footer (lesson-6) */
 .triphouse {
   display: block;
   min-height: 100vh;
-  background-image: url("../pictures/top-section/castelmezzano1.png");
+  background-image: url("../pictures/triphouse/castelmezzano1.png");
   background-color: #12121240;
   background-repeat: no-repeat;
   background-size: cover;
@@ -138,7 +14,6 @@
 
 .triphouse__body {
   margin: auto;
-  max-width: 1440px;
   padding: 0 104px 120px;
 }
 
@@ -150,9 +25,9 @@
 }
 
 .triphouse__logo {
-  width: 206px;
   height: 40px;
-  background: url("../pictures/top-section/css_sprites1.png") -630px -10px;
+  width: 205px;
+  background: url("../pictures/triphouse/sprite/icons.svg") -341px 0;
 }
 
 .triphouse__menu {
@@ -166,11 +41,9 @@
 .triphouse__menu li {
   position: relative;
   display: block;
-  text-decoration: none;
-  font-size: 1.5em;
-  color: #FFFFFF;
   transition: 0.2s;
 }
+
 .triphouse__menu li::after {
   position: absolute;
   content: "";
@@ -178,7 +51,7 @@
   height: 4px;
   top: 100%;
   left: 0;
-  background: #F5BD41;
+  background: #f5bd41;
   transition: transform 0.5s;
   transform: scaleX(0);
   transform-origin: right;
@@ -197,6 +70,7 @@
   line-height: 1.17em;
   margin: 0 24px 0 0;
   color: #ffffff;
+  text-decoration: none;
   box-sizing: border-box;
 }
 
@@ -208,20 +82,22 @@
   line-height: 1.17em;
   margin: 0 24px 0 0;
   color: #ffffff;
+  text-decoration: none;
+  box-sizing: border-box;
 }
 
 .triphouse__menu-item3 {
   width: 30px;
   height: 30px;
   margin: 0 0 0 24px;
-  background: url("../pictures/top-section/css_sprites1.png") -10px -10px;
+  background: url("../pictures/triphouse/sprite/icons.svg") -271px 0;
 }
 
 .triphouse__menu-item4 {
   width: 40px;
   height: 40px;
   margin: 0 0 0 24px;
-  background: url("../pictures/top-section/css_sprites1.png") -60px -10px;
+  background: url("../pictures/triphouse/sprite/icons.svg") -668px 0;
   box-sizing: border-box;
 }
 
@@ -245,14 +121,14 @@
   width: 135px;
   height: 40px;
   padding: 0 8px;
-  background: url("../pictures/top-section/css_sprites1.png") -474px -10px;
+  background: url("../pictures/triphouse/sprite/icons.svg") 0 0;
 }
 
 .triphouse__apple {
   width: 120px;
   height: 40px;
   margin: 0 8px;
-  background: url("../pictures/top-section/css_sprites1.png") -334px -10px;
+  background: url("../pictures/triphouse/sprite/icons.svg") -151px 0;
 }
 
 .search__items {
@@ -262,7 +138,7 @@
   background-color: #ffffff;
   box-sizing: border-box;
   border-radius: 8px;
-  }
+}
 
 .search__subtitle1 {
   font-family: Roboto, sans-serif;
@@ -292,9 +168,9 @@
   position: relative;
   flex-direction: column;
   box-sizing: border-box;
-  width: 38%;
- }
-.search__input{
+}
+
+.search__input {
   display: block;
   height: 64px;
   width: 100%;
@@ -310,13 +186,13 @@
 }
 
 .search__input2 {
-  border: 3px solid #CECECE;
+  border: 3px solid #cecece;
 }
 
-.search__input:focus{
+.search__input:focus {
   outline: none;
-  border-color: #F5BD41;
-  }
+  border-color: #f5bd41;
+}
 
 .search__item2 {
   display: flex;
@@ -324,14 +200,12 @@
   flex-direction: column;
   box-sizing: border-box;
   border-radius: 8px;
-  width: 21%;
- }
+}
 
 .search__item3 {
   display: flex;
   position: relative;
   justify-content: center;
-  width: 26%;
 }
 
 .search__item4 {
@@ -340,7 +214,6 @@
   align-items: center;
   color: #ffffff;
   background: #3077c6;
-  width: 15%;
   border-radius: 8px;
 }
 
@@ -354,8 +227,6 @@
   border: none;
 }
 
-
-/* footer (lesson7) */
 /* Offer */
 .offer {
   display: block;
@@ -400,27 +271,27 @@
   margin: 0 auto;
   width: 100px;
   height: 100px;
-  background: url("../pictures/offer/sprites-offer.png") -200px 0;
+  background: url("../pictures/offer/icons.svg") -538px 0;
 }
 
 .offer__image2 {
   margin: 0 auto;
   width: 100px;
   height: 100px;
-  background: url("../pictures/offer/sprites-offer.png") -100px 0;
+  background: url("../pictures/offer/icons.svg") -170px 0;
 }
 
 .offer__image3 {
   margin: 0 auto;
   width: 100px;
   height: 100px;
-  background: url("../pictures/offer/sprites-offer.png") 0 0;
+  background: url("../pictures/offer/icons.svg") -70px 0;
 }
 .offer__image4 {
   margin: 0 auto;
   width: 100px;
   height: 100px;
-  background: url("../pictures/offer/sprites-offer.png") -300px 0;
+  background: url("../pictures/offer/icons.svg") -270px 0;
 }
 
 .offer__subtitle {
@@ -433,34 +304,34 @@
 }
 
 /* footer-2 */
-.footer-2 {
+.footer {
   display: block;
   padding-bottom: 120px;
   background: #10367c;
 }
 
-.footer-2__logo{
- font-size: 0;
+.footer__logo {
+  font-size: 0;
 }
 
-.footer-2__rectangle {
+.footer__rectangle {
   display: flex;
   justify-content: space-between;
   padding: 120px 104px 0 104px;
 }
 
-.footer-2__container {
+.footer__container {
   display: flex;
   flex-direction: column;
 }
 
-.item-footer-2 {
+.item-footer {
   padding: 0;
   margin: 0;
   list-style-type: none;
 }
 
-.footer-2__subtitle-1 {
+.footer__subtitle {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-size: 20px;
@@ -469,16 +340,7 @@
   color: #ffffff;
 }
 
-.footer-2__subtitle-2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 500;
-  font-size: 20px;
-  line-height: 1.17em;
-  margin: 0 0 5px 0;
-  color: #ffffff;
-}
-
-.item__footer-2-text {
+.item__footer-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 20px;
@@ -487,7 +349,7 @@
   color: #ffffff;
 }
 
-.footer-2-text {
+.footer-text {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 14px;
@@ -496,8 +358,7 @@
   color: #ffffff;
 }
 
-
-@media only screen and (min-width: 740px) {
+@media only screen and (min-width: 1280px) {
   /* For desktop: */
   .col-1 {
     width: 8.33%;
@@ -537,7 +398,7 @@
   }
 }
 
-@media only screen and (max-width: 740px) {
+@media only screen and (max-width: 1280px) {
   /* For desktop: */
   .col-1 {
     width: 8.33%;
@@ -574,6 +435,150 @@
   }
   .col-12 {
     width: 100%;
+  }
+
+  .triphouse__header {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 12px 0 0 0;
+  }
+
+  .triphouse__logo{
+    margin: 20px 0 0 0;
+  }
+
+  .triphouse__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin: 20px 0 0 0;
+    padding: 0;
+  }
+
+  .search__items {
+    display: flex;
+    flex-direction: column;
+    margin: 31px 0 0 0;
+    padding: 0 8px 8px;
+    max-width: 100%;
+    background-color: #f5bd41;
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+
+  .search__item1 {
+    position: relative;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .search__input {
+    height: 48px;
+    padding-left: 4px;
+  }
+
+  .search__input1 {
+    display: block;
+    position: absolute;
+    font-size: 15px;
+    height: 48px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  .search__subtitle1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0;
+    line-height: 1.17em;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    color: #383838;
+    width: 16px;
+    height: 16px;
+    background: url("../pictures/offer/icons.svg") -135px 0;
+  }
+
+  .search__subtitle2 {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.17em;
+    top: 6px;
+    left: 8px;
+    color: #383838;
+  }
+
+  .search__input2 {
+    align-items: flex-end;
+    border: 3px solid transparent;
+    height: 48px;
+    padding: 0 0 0 4px;
+  }
+
+  .search__input:focus {
+    outline: none;
+    border-color: #464642;
+  }
+
+  .search__item2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .search__item3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .search__input3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.17em;
+    width: 100%;
+    height: 48px;
+    padding: 0 0 0 4px;
+  }
+
+  .search__item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #3077c6;
+    margin-top: 8px;
+    height: 48px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .search__button1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.17em;
+    color: #ffffff;
+    background: #3077c6;
+    border: none;
   }
 
   .offer__wrapper {
@@ -591,15 +596,16 @@
     display: flex;
     min-width: 200px;
     font-size: 0;
+    margin-bottom: 30px;
   }
 
-  .footer-2__rectangle {
+  .footer__rectangle {
     display: flex;
     justify-content: space-around;
     padding: 120px 0 0 0;
   }
 
-  .footer-2-text {
+  .footer-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 14px;
@@ -610,11 +616,207 @@
   }
 }
 
-@media only screen and (max-width: 480px) {
+@media only screen and (max-width: 600px) {
   /* For mobile phones: */
   [class*="col-"] {
     width: 100%;
   }
+  /* triphouse-mobile phones*/
+  .triphouse__body {
+    margin: auto;
+    padding: 0 20px 40px;
+  }
+
+  .triphouse__header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 12px 0 0 0;
+  }
+
+  .triphouse__logo {
+    height: 24px;
+    width: 122px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -546px 0;
+  }
+
+  .triphouse__menu {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    list-style-type: none;
+    margin: 0;
+  }
+
+  .triphouse__menu-item1 {
+    font-size: 0;
+  }
+
+  .triphouse__menu-item2 {
+    font-size: 0;
+    order: 1;
+    width: 24px;
+    height: 16px;
+    margin: 0 0 0 16px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -317px 0;
+  }
+
+  .triphouse__menu-item3 {
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 16px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -301px 0;
+  }
+
+  .triphouse__menu-item4 {
+    width: 24px;
+    height: 24px;
+    margin: 0 0 0 16px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -708px 0;
+    box-sizing: border-box;
+  }
+
+  .triphouse__title {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.17em;
+    margin: 52px 0 0 0;
+    color: #ffffff;
+  }
+
+  .triphouse__footer {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 0;
+  }
+
+  .search__items {
+    display: flex;
+    flex-direction: column;
+    margin: 31px 0 0 0;
+    padding: 0 8px 8px;
+    max-width: 100%;
+    background-color: #f5bd41;
+    box-sizing: border-box;
+    border-radius: 0;
+  }
+
+  .search__item1 {
+    position: relative;
+    flex-direction: row;
+    box-sizing: border-box;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .search__input {
+    height: 48px;
+    padding-left: 4px;
+  }
+
+  .search__input1 {
+    display: block;
+    position: absolute;
+    font-size: 15px;
+    height: 48px;
+    border: 3px solid transparent;
+    border-radius: 8px;
+    padding: 0;
+  }
+
+  .search__subtitle1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 0;
+    line-height: 1.17em;
+    position: absolute;
+    top: 15px;
+    left: 8px;
+    color: #383838;
+    width: 16px;
+    height: 16px;
+    background: url("../pictures/offer/icons.svg") -135px 0;
+  }
+
+  .search__subtitle2 {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.17em;
+    top: 6px;
+    left: 8px;
+    color: #383838;
+  }
+
+  .search__input2 {
+    align-items: flex-end;
+    border: 3px solid transparent;
+    height: 48px;
+    padding: 0 0 0 4px;
+  }
+
+  .search__input:focus {
+    outline: none;
+    border-color: #464642;
+  }
+
+  .search__item2 {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin-top: 8px;
+    border-radius: 8px;
+    width: 100%;
+  }
+
+  .search__item3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    margin-top: 8px;
+    width: 100%;
+  }
+
+  .search__input3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 1.17em;
+    width: 100%;
+    height: 48px;
+    padding: 0 0 0 4px;
+  }
+
+  .search__item4 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+    background: #3077c6;
+    margin-top: 8px;
+    height: 48px;
+    width: 100%;
+    border-radius: 8px;
+  }
+
+  .search__button1 {
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 19px;
+    line-height: 1.17em;
+    color: #ffffff;
+    background: #3077c6;
+    border: none;
+  }
+
   /* offer-mobile phones*/
   .offer {
     display: block;
@@ -666,54 +868,54 @@
     margin: 0 auto;
     width: 70px;
     height: 70px;
-    background: url("../pictures/offer/sprites-offer-small.png") -140px 0;
+    background: url("../pictures/offer/icons.svg") -638px 0;
   }
 
   .offer__image2 {
     margin: 0 auto;
     width: 70px;
     height: 70px;
-    background: url("../pictures/offer/sprites-offer-small.png") -70px 0;
+    background: url("../pictures/offer/icons.svg") -0px 0;
   }
 
   .offer__image3 {
     margin: 0 auto;
     width: 70px;
     height: 70px;
-    background: url("../pictures/offer/sprites-offer-small.png") 0 0;
+    background: url("../pictures/offer/icons.svg") -708px 0;
   }
 
   .offer__image4 {
     margin: 0 auto;
     width: 70px;
     height: 70px;
-    background: url("../pictures/offer/sprites-offer-small.png") -210px 0;
+    background: url("../pictures/offer/icons.svg") -370px 0;
   }
 
   /* footer-2-mobile phones*/
-  .footer-2 {
+  .footer {
     display: block;
     padding: 32px 0 40px 0;
     background: #10367c;
-    }
+  }
 
-  .footer-2__logo{
+  .footer__logo {
     margin: 0 auto;
     width: 98px;
     height: 19px;
-    background: url("../pictures/offer/sprites-offer-small.png") -280px 0;
-     }
+    background: url("../pictures/offer/icons.svg") -440px 0;
+  }
 
-  .footer-2__rectangle {
+  .footer__rectangle {
     padding: 40px 0 0 0;
     text-align: center;
   }
 
-  .item__footer-2-text {
+  .item__footer-text {
     display: none;
   }
 
-  .footer-2__subtitle-1, .footer-2__subtitle-2 {
+  .footer__subtitle {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-size: 15px;
@@ -723,7 +925,7 @@
     color: #ffffff;
   }
 
-  .footer-2-text {
+  .footer-text {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-size: 12px;
