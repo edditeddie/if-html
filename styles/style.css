@@ -120,7 +120,7 @@
 .triphouse__google {
   width: 135px;
   height: 40px;
-  padding: 0 8px;
+  margin: 0 8px;
   background: url("../pictures/triphouse/sprite/icons.svg") 0 0;
 }
 
@@ -168,6 +168,7 @@
   position: relative;
   flex-direction: column;
   box-sizing: border-box;
+  width: 38%;
 }
 
 .search__input {
@@ -198,6 +199,7 @@
   display: flex;
   position: relative;
   flex-direction: column;
+  width: 21%;
   box-sizing: border-box;
   border-radius: 8px;
 }
@@ -206,12 +208,14 @@
   display: flex;
   position: relative;
   justify-content: center;
+  width: 25%;
 }
 
 .search__item4 {
   display: flex;
   justify-content: center;
   align-items: center;
+  width: 16%;
   color: #ffffff;
   background: #3077c6;
   border-radius: 8px;
@@ -230,7 +234,7 @@
 /* Offer */
 .offer {
   display: block;
-  padding: 120px 0 104px 0;
+  padding: 120px 0 0 0;
   color: #ffffff;
 }
 
@@ -255,9 +259,8 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  padding: 80px 0 122px 0;
-  margin: 0;
-  text-align: center;
+  justify-content: space-between;
+  padding: 80px 104px 120px;
   font-size: 0;
 }
 
@@ -265,6 +268,7 @@
   display: flex;
   flex-direction: column;
   font-size: 0;
+  width: 25%;
 }
 
 .offer__image1 {
@@ -303,7 +307,104 @@
   color: #383838;
 }
 
-/* footer-2 */
+/* Homes-guests */
+.homes-guests{
+  display: block;
+  padding: 120px 0 0;
+  background-color:#EAF0F9;
+}
+
+.homes-guests__heading{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17em;
+  text-align: center;
+  color: #383838;
+}
+
+.homes-guests__wrapper{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  padding: 105px 100px 70px;
+}
+
+.homes-guests__rectangle{
+  display: flex;
+  flex-direction: column;
+  position: relative;
+  width: 295px;
+  min-height: 435px;
+  margin: 0 4px 50px;
+}
+
+.homes-guests__image1{
+  width: 295px;
+  height: 295px;
+  background: url("../pictures/Homes guests loves/1.png") 0 0;
+}
+
+.homes-guests__image2{
+  width: 295px;
+  height: 295px;
+  background: url("../pictures/Homes guests loves/2.png") 0 0;
+}
+
+.homes-guests__image3{
+  width: 295px;
+  height: 295px;
+  background: url("../pictures/Homes guests loves/3.png") 0 0;
+}
+
+.homes-guests__image4{
+  width: 295px;
+  height: 295px;
+  background: url("../pictures/Homes guests loves/4.png") 0 0;
+}
+
+.homes-guests__subtitle1{
+  font-family: "Roboto", sans-serif;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #3077C6;
+  margin-top: 24px;
+}
+
+.homes-guests__subtitle2{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #BFBFBF;
+  margin-top: 24px;
+  margin-bottom: 0;
+}
+
+.homes-guests__button-arrow2 {
+  display: none;
+  position: absolute;
+  bottom: 54%;
+  left: 86%;
+  width: 36px;
+  height: 36px;
+  background: url("../pictures/Homes guests loves/button-arrow-mobile.svg") 0 0;
+}
+
+.homes-guests__button-arrow4{
+  display: block;
+  position: absolute;
+  bottom: 60%;
+  left: 91%;
+  width: 48px;
+  height: 48px;
+  background: url("../pictures/Homes guests loves/button-arrow.svg") 0 0;
+}
+
+/* footer */
 .footer {
   display: block;
   padding-bottom: 120px;
@@ -317,7 +418,7 @@
 .footer__rectangle {
   display: flex;
   justify-content: space-between;
-  padding: 120px 104px 0 104px;
+  padding: 120px 272px 0 104px;
 }
 
 .footer__container {
@@ -358,7 +459,7 @@
   color: #ffffff;
 }
 
-@media only screen and (min-width: 1280px) {
+@media only screen and (max-width: 1232px) {
   /* For desktop: */
   .col-1 {
     width: 8.33%;
@@ -395,57 +496,116 @@
   }
   .col-12 {
     width: 100%;
+  }
+
+  .triphouse__menu-item1{
+    margin-right: 12px;
+  }
+
+  .triphouse__menu-item2{
+    margin-right: 12px;
+  }
+
+  .search__item1{
+    width: 33%;
+  }
+
+  .search__item2{
+    width: 26%;
+  }
+
+  .search__subtitle2{
+    white-space: normal;
+  }
+
+  .offer__wrapper{
+    padding-bottom: 40px;
+  }
+
+  .offer-rectangle{
+    padding-bottom: 80px;
+  }
+
+  .homes-guests__rectangle{
+    margin: 0 0 70px ;
+  }
+
+  .homes-guests__wrapper{
+    padding: 105px 70px 50px;
+  }
+
+  .homes-guests__container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .homes-guests__button-arrow2, .homes-guests__button-arrow4 {
+    display: none;
+  }
+
+  .footer__rectangle {
+    display: flex;
+    justify-content: space-between;
+    padding: 120px 104px 0 104px;
   }
 }
 
-@media only screen and (max-width: 1280px) {
+@media only screen and (max-width: 768px) {
   /* For desktop: */
-  .col-1 {
+  .col-lg-1 {
     width: 8.33%;
   }
-  .col-2 {
+  .col-lg-2 {
     width: 16.66%;
   }
-  .col-3 {
+  .col-lg-3 {
     width: 25%;
   }
-  .col-4 {
+  .col-lg-4 {
     width: 33.33%;
   }
-  .col-5 {
+  .col-lg-5 {
     width: 41.66%;
   }
-  .col-6 {
+  .col-lg-6 {
     width: 50%;
   }
-  .col-7 {
+  .col-lg-7 {
     width: 58.33%;
   }
-  .col-8 {
+  .col-lg-8 {
     width: 66.66%;
   }
-  .col-9 {
+  .col-lg-9 {
     width: 75%;
   }
-  .col-10 {
+  .col-lg-10 {
     width: 83.33%;
   }
-  .col-11 {
+  .col-lg-11 {
     width: 91.66%;
   }
-  .col-12 {
+  .col-lg-12 {
     width: 100%;
+  }
+
+  .triphouse__body {
+    margin: auto;
+    padding: 0 60px 40px;
   }
 
   .triphouse__header {
     display: flex;
-    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
     justify-content: space-between;
     padding: 12px 0 0 0;
   }
 
-  .triphouse__logo{
-    margin: 20px 0 0 0;
+  .triphouse__logo {
+    height: 24px;
+    width: 122px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -546px 0;
   }
 
   .triphouse__menu {
@@ -453,8 +613,51 @@
     flex-direction: row;
     align-items: center;
     list-style-type: none;
-    margin: 20px 0 0 0;
-    padding: 0;
+    margin: 0;
+  }
+
+  .triphouse__menu-item1 {
+    font-size: 0;
+  }
+
+  .triphouse__menu-item2 {
+    font-size: 0;
+    order: 1;
+    width: 24px;
+    height: 16px;
+    margin: 0 0 0 16px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -317px 0;
+  }
+
+  .triphouse__menu-item3 {
+    width: 16px;
+    height: 16px;
+    margin: 0 0 0 16px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -301px 0;
+  }
+
+  .triphouse__menu-item4 {
+    width: 24px;
+    height: 24px;
+    margin: 0 0 0 16px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -708px 0;
+    box-sizing: border-box;
+  }
+
+  .triphouse__title {
+    display: block;
+    font-family: Roboto, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 1.17em;
+    margin: 52px 0 0 0;
+    color: #ffffff;
+  }
+
+  .triphouse__footer {
+    display: flex;
+    justify-content: center;
+    margin: 32px 0 0;
   }
 
   .search__items {
@@ -491,18 +694,8 @@
     padding: 0;
   }
 
-  .search__subtitle1 {
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 0;
-    line-height: 1.17em;
-    position: absolute;
-    top: 15px;
-    left: 8px;
-    color: #383838;
-    width: 16px;
-    height: 16px;
-    background: url("../pictures/offer/icons.svg") -135px 0;
+  .search__subtitle1{
+    display: none;
   }
 
   .search__subtitle2 {
@@ -546,19 +739,6 @@
     width: 100%;
   }
 
-  .search__input3 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.17em;
-    width: 100%;
-    height: 48px;
-    padding: 0 0 0 4px;
-  }
-
   .search__item4 {
     display: flex;
     justify-content: center;
@@ -586,7 +766,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
-    padding: 80px 0 122px 0;
+    padding: 80px 0 90px 0;
     margin: 0;
     text-align: center;
     font-size: 0;
@@ -597,6 +777,7 @@
     min-width: 200px;
     font-size: 0;
     margin-bottom: 30px;
+    padding-bottom: 0;
   }
 
   .footer__rectangle {
@@ -614,11 +795,87 @@
     margin: 64px 0 0 0;
     color: #ffffff;
   }
+
+  .homes-guests{
+   padding: 40px;
+  }
+
+  .homes-guests__heading{
+    font-size: 34px;
+  }
+
+  .homes-guests__wrapper{
+    padding: 32px 0 0;
+  }
+
+  .homes-guests__container{
+    display: flex;
+    justify-content: center;
+  }
+
+  .homes-guests__rectangle{
+    margin: 0;
+  }
+
+  .homes-guests__subtitle1{
+    font-family: "Roboto", sans-serif;
+    text-decoration: none;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.17em;
+    color: #3077C6;
+    margin-top: 12px;
+  }
+
+  .homes-guests__subtitle2{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 1.17em;
+    color: #BFBFBF;
+    margin-top: 12px;
+    margin-bottom: 0;
+  }
+
+  .homes-guests__button-arrow{
+    display: none;
+  }
+
+  .footer{
+    padding: 40px;
+  }
+
+  .footer__rectangle {
+    display: flex;
+    justify-content: space-evenly;
+    padding: 40px 0 0;
+  }
+
+  .footer__subtitle {
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.17em;
+    margin: 0 0 0 0;
+    color: #ffffff;
+  }
+
+  .item__footer-text {
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 1.17em;
+    margin: 24px 0 0 0;
+    color: #ffffff;
+  }
 }
 
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 360px) {
   /* For mobile phones: */
-  [class*="col-"] {
+  .col-md-6 {
+    width: 50%;
+  }
+  .col-md-12 {
     width: 100%;
   }
   /* triphouse-mobile phones*/
@@ -727,21 +984,7 @@
     padding: 0;
   }
 
-  .search__subtitle1 {
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 0;
-    line-height: 1.17em;
-    position: absolute;
-    top: 15px;
-    left: 8px;
-    color: #383838;
-    width: 16px;
-    height: 16px;
-    background: url("../pictures/offer/icons.svg") -135px 0;
-  }
-
-  .search__subtitle2 {
+    .search__subtitle2 {
     display: block;
     font-family: Roboto, sans-serif;
     font-weight: 500;
@@ -780,19 +1023,6 @@
     justify-content: center;
     margin-top: 8px;
     width: 100%;
-  }
-
-  .search__input3 {
-    display: flex;
-    position: relative;
-    justify-content: center;
-    font-family: Roboto, sans-serif;
-    font-weight: 500;
-    font-size: 15px;
-    line-height: 1.17em;
-    width: 100%;
-    height: 48px;
-    padding: 0 0 0 4px;
   }
 
   .search__item4 {
@@ -892,10 +1122,85 @@
     background: url("../pictures/offer/icons.svg") -370px 0;
   }
 
+   /* Homes-guests */
+  .homes-guests {
+    padding: 40px 0;
+  }
+
+  .homes-guests__container {
+    display: flex;
+    justify-content: center;
+    width: 155px;
+  }
+
+  .homes-container-none {
+    display: none;
+  }
+
+  .homes-guests__heading {
+    font-size: 28px;
+  }
+
+  .homes-guests__wrapper {
+    padding: 32px 17px 0;
+    margin: 0;
+  }
+
+  .homes-guests__rectangle {
+    width: 155px;
+    min-height: 155px;
+    margin: 0 0;
+  }
+
+  .homes-guests__image1 {
+    width: 155px;
+    height: 155px;
+    background: url("../pictures/Homes guests loves/1-mobile.png") 0 0;
+  }
+
+  .homes-guests__image2 {
+    width: 155px;
+    height: 155px;
+    background: url("../pictures/Homes guests loves/2-mobile.png") 0 0;
+  }
+
+  .homes-guests__subtitle1 {
+    display: flex;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17em;
+    color: #3077C6;
+    margin-top: 8px;
+    width: 155px;
+  }
+
+  .homes-guests__subtitle2 {
+    display: flex;
+    flex-wrap: wrap;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17em;
+    color: #BFBFBF;
+    margin-top: 8px;
+    width: 155px;
+  }
+
+   .homes-guests__button-arrow2 {
+    display: block;
+    position: absolute;
+    bottom: 54%;
+    left: 86%;
+    width: 36px;
+    height: 36px;
+    background: url("../pictures/Homes guests loves/button-arrow-mobile.svg") 0 0;
+  }
+
   /* footer-2-mobile phones*/
   .footer {
     display: block;
-    padding: 32px 0 40px 0;
+    padding: 40px 0;
     background: #10367c;
   }
 
@@ -935,3 +1240,5 @@
     color: #ffffff;
   }
 }
+
+
