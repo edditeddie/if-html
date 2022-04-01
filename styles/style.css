@@ -75,30 +75,22 @@
 }
 
 .triphouse__menu-item2 {
-  display: block;
-  font-family: Roboto, sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.17em;
-  margin: 0 24px 0 0;
-  color: #ffffff;
-  text-decoration: none;
-  box-sizing: border-box;
-}
-
-.triphouse__menu-item3 {
   width: 30px;
   height: 30px;
   margin: 0 0 0 24px;
   background: url("../pictures/triphouse/sprite/icons.svg") -271px 0;
 }
 
-.triphouse__menu-item4 {
+.triphouse__menu-item3 {
   width: 40px;
   height: 40px;
   margin: 0 0 0 24px;
   background: url("../pictures/triphouse/sprite/icons.svg") -668px 0;
   box-sizing: border-box;
+}
+
+.triphouse__menu-item4 {
+  display: none;
 }
 
 .triphouse__title {
@@ -502,10 +494,6 @@
     margin-right: 12px;
   }
 
-  .triphouse__menu-item2{
-    margin-right: 12px;
-  }
-
   .search__item1{
     width: 33%;
   }
@@ -591,7 +579,7 @@
 
   .triphouse__body {
     margin: auto;
-    padding: 0 60px 40px;
+    padding: 0 45px 40px;
   }
 
   .triphouse__header {
@@ -614,6 +602,7 @@
     align-items: center;
     list-style-type: none;
     margin: 0;
+    padding: 0;
   }
 
   .triphouse__menu-item1 {
@@ -621,28 +610,28 @@
   }
 
   .triphouse__menu-item2 {
-    font-size: 0;
-    order: 1;
-    width: 24px;
-    height: 16px;
-    margin: 0 0 0 16px;
-    background: url("../pictures/triphouse/sprite/icons.svg") -317px 0;
-  }
-
-  .triphouse__menu-item3 {
     width: 16px;
     height: 16px;
     margin: 0 0 0 16px;
     background: url("../pictures/triphouse/sprite/icons.svg") -301px 0;
   }
 
-  .triphouse__menu-item4 {
+  .triphouse__menu-item3 {
     width: 24px;
     height: 24px;
     margin: 0 0 0 16px;
     background: url("../pictures/triphouse/sprite/icons.svg") -708px 0;
     box-sizing: border-box;
   }
+
+  .triphouse__menu-item4 {
+    width: 24px;
+    height: 16px;
+    margin: 0 0 0 24px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -317px 0;
+    box-sizing: border-box;
+  }
+
 
   .triphouse__title {
     display: block;
@@ -911,27 +900,25 @@
   }
 
   .triphouse__menu-item2 {
-    font-size: 0;
-    order: 1;
-    width: 24px;
-    height: 16px;
-    margin: 0 0 0 16px;
-    background: url("../pictures/triphouse/sprite/icons.svg") -317px 0;
-  }
-
-  .triphouse__menu-item3 {
     width: 16px;
     height: 16px;
     margin: 0 0 0 16px;
     background: url("../pictures/triphouse/sprite/icons.svg") -301px 0;
   }
 
-  .triphouse__menu-item4 {
+  .triphouse__menu-item3 {
     width: 24px;
     height: 24px;
     margin: 0 0 0 16px;
     background: url("../pictures/triphouse/sprite/icons.svg") -708px 0;
     box-sizing: border-box;
+  }
+
+  .triphouse__menu-item4 {
+    width: 24px;
+    height: 16px;
+    margin: 0 0 0 16px;
+    background: url("../pictures/triphouse/sprite/icons.svg") -317px 0;
   }
 
   .triphouse__title {
