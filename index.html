@@ -9,77 +9,148 @@
     <link href="styles/style.css" rel="stylesheet" type="text/css" />
   </head>
   <body>
-    <div class="triphouse">
-    <div class="triphouse__body">
-      <header class="triphouse__header">
-        <div class="triphouse__logo"></div>
-        <ul class="triphouse__menu">
-          <li class="triphouse__menu-item1">Stays</li>
-          <li class="triphouse__menu-item2">Attractions</li>
-          <li class="triphouse__menu-item3"></li>
-          <li class="triphouse__menu-item4"></li>
-        </ul>
-      </header>
-      <div class="triphouse__title">
-        Discover stays <br />
-        to live, work or just relax
-      </div>
-      <form class="search" action="index.html" method="get">
-        <div class="search__items">
-          <div class="col-4 search__item1">
-            <label class="search__subtitle1" for="search__input1">Your destination or hotel name</label>
-            <input class="search__input search__input" id="search__input1" list="search__input" placeholder="New York" required>
-            <datalist id="search__input">
-              <option value="New York">
-              <option value="London">
-              <option value="Paris">
-              <option value="Tokio">
-              <option value="Berlin">
-              <option value="Madrid">
-              <option value="Wien">
-              <option value="Lyon">
-            </datalist>
-          </div>
-          <div class="col-3 search__item2">
-            <label class="search__subtitle2" for="search__input2">Check-in — Check-out</label>
-            <input class="search__input search__input2" id="search__input2" type="date" placeholder="Check-in — Check-out" required>
-          </div>
-          <div class="col-3 search__item3">
-            <input class="search__input search__input3" name="name" type="text" placeholder="2 Adults — 0 Children — 1 Room" required />
-          </div>
-          <div class="col-3 search__item4">
-            <button class="search__button1" type="submit">Search</button>
-          </div>
+    <section class="triphouse">
+      <div class="triphouse__body">
+        <header class="triphouse__header">
+          <div class="triphouse__logo"></div>
+          <ul class="triphouse__menu">
+            <li class="triphouse__menu-item1">Stays</li>
+            <li class="triphouse__menu-item1">Attractions</li>
+            <li class="triphouse__menu-item2"></li>
+            <li class="triphouse__menu-item3"></li>
+            <li class="triphouse__menu-item4"></li>
+          </ul>
+        </header>
+        <div class="triphouse__title">
+          Discover stays <br />
+          to live, work or just relax
         </div>
-      </form>
-      <div class="triphouse__footer">
-        <div class="triphouse__google"></div>
-        <div class="triphouse__apple"></div>
+        <form class="search" action="index.html" method="get">
+          <div class="search__items">
+            <div class="search__item1">
+              <label class="search__subtitle1" for="search__input1"
+                >Your destination or hotel name</label
+              >
+              <input
+                class="search__input search__input"
+                id="search__input1"
+                list="search__input"
+                placeholder="New York"
+                required
+              />
+              <datalist id="search__input">
+                <option value="New York"></option>
+                <option value="London"></option>
+                <option value="Paris"></option>
+                <option value="Tokio"></option>
+                <option value="Berlin"></option>
+                <option value="Madrid"></option>
+                <option value="Wien"></option>
+                <option value="Lyon"></option>
+              </datalist>
+            </div>
+            <div class="search__item2">
+              <label class="search__subtitle2" for="search__input2"
+                >Check-in — Check-out</label
+              >
+              <input
+                class="search__input search__input2"
+                id="search__input2"
+                type="date"
+                placeholder="Check-in — Check-out"
+                required
+              />
+            </div>
+            <div class="search__item3">
+              <input
+                class="search__input search__input3"
+                name="name"
+                type="text"
+                placeholder="2 Adults — 0 Children — 1 Room"
+                required
+              />
+            </div>
+            <div class="search__item4">
+              <button class="search__button1" type="submit">Search</button>
+            </div>
+          </div>
+        </form>
+        <div class="triphouse__footer">
+          <div class="triphouse__google"></div>
+          <div class="triphouse__apple"></div>
+        </div>
       </div>
-    </div>
-  </div>
+    </section>
     <section>
       <div class="offer">
         <h2 class="offer__title">What do we offer</h2>
         <div class="offer__underline"></div>
         <ul class="offer__wrapper">
-          <li class="col-3 offer-rectangle">
+          <li class="col-md-6 col-lg-12 col-6 offer-rectangle">
             <div class="offer__image1"></div>
             <h3 class="offer__subtitle">Support 24/7</h3>
           </li>
-          <li class="col-3 offer-rectangle">
+          <li class="col-md-6 col-lg-12 col-6 offer-rectangle">
             <div class="offer__image2"></div>
             <h3 class="offer__subtitle">Communicate directly</h3>
           </li>
-          <li class="col-3 offer-rectangle">
+          <li class="col-md-6 col-lg-12 col-6 offer-rectangle">
             <div class="offer__image3"></div>
             <h3 class="offer__subtitle">Book online</h3>
           </li>
-          <li class="col-3 offer-rectangle">
+          <li class="col-md-6 col-lg-12 col-6 offer-rectangle">
             <div class="offer__image4"></div>
             <h3 class="offer__subtitle">Real guest reviews</h3>
           </li>
         </ul>
+      </div>
+    </section>
+    <section class="homes-guests">
+      <h2 class="homes-guests__heading">Homes guests loves</h2>
+      <div class="homes-guests__wrapper">
+
+        <div class="col-md-6 col-lg-12 col-6 homes-guests__container">
+          <div class="homes-guests__rectangle">
+            <svg class="homes-guests__image1"></svg>
+            <a class="homes-guests__subtitle1" href="#">Hotel Leopold</a>
+            <figcaption class="homes-guests__subtitle2">
+              Saint Petersburg, Russia
+            </figcaption>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-12 col-6 homes-guests__container">
+          <div class="homes-guests__rectangle">
+            <svg class="homes-guests__image2"></svg>
+            <a class="homes-guests__subtitle1" href="#">Apartment Sunshine</a>
+            <div class="homes-guests__subtitle2">
+              Santa Cruz de Tenerife, Spain
+            </div>
+            <svg class="homes-guests__button-arrow2"></svg>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-12 col-6 homes-guests__container homes-container-none">
+          <div class="homes-guests__rectangle">
+            <svg class="homes-guests__image3"></svg>
+            <a class="homes-guests__subtitle1" href="#">Villa Kunerad</a>
+            <div class="homes-guests__subtitle2">
+              Vysokie Tatry, Slowakia
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 col-lg-12 col-6 homes-guests__container homes-container-none">
+          <div class="homes-guests__rectangle">
+            <svg class="homes-guests__image4"></svg>
+            <a class="homes-guests__subtitle1" href="#">Hostel Friendship</a>
+            <div class="homes-guests__subtitle2">
+              Berlin, Germany
+            </div>
+            <svg class="homes-guests__button-arrow4"></svg>
+          </div>
+        </div>
+
       </div>
     </section>
     <footer>
