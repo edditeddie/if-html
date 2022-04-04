@@ -396,6 +396,219 @@
   background: url("../pictures/Homes guests loves/button-arrow.svg") 0 0;
 }
 
+/* destinations */
+.destinations {
+  display: block;
+  margin: 0 104px;
+  background-color: #FFFFFF;
+}
+
+.destinations__heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17em;
+  text-align: center;
+  color: #383838;
+  margin: 120px;
+}
+
+.destinations__tab {
+  display: flex;
+  height: 64px;
+  max-width: 622px;
+  justify-content:flex-start;
+  border-radius: 8px;
+  background-color: #F3F3F4;
+  box-sizing: border-box;
+}
+
+.destinations__tab-button1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  text-align: center;
+  color: #383838;
+  border-radius: 8px;
+  border: 0;
+}
+
+.destinations__tab-button1 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  width: 31%;
+  text-align: center;
+  color: #FFFFFF;
+  background-color:#3077C6;
+  border-radius: 8px;
+  border: 0;
+}
+
+.destinations__tab-button2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  width: 31%;
+  text-align: center;
+  color: #383838;
+  border-radius: 8px;
+  border: 0;
+}
+
+.destinations__tab-button3 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  width: 38%;
+  text-align: center;
+  color: #383838;
+  border-radius: 8px;
+  border: 0;
+}
+
+.destinations__wrapper-regions {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.destinations__wrapper-rectangle {
+  position: relative;
+  width: 295px;
+  margin:  65px 0 0 0;
+}
+
+.destinations__holder {
+  position: relative;
+  height: 295px;
+  width: 100%;
+  margin: 0 0 24px;
+}
+
+.destinations__image {
+  position: relative;
+  height: 295px;
+  width: 295px;
+}
+
+.destinations__image::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  background-color: #38383866;
+}
+
+.destinations__image:hover::before {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  opacity: 1;
+  background-color: #38383866;
+}
+
+.destinations__book {
+  display: none;
+  position: absolute;
+  opacity: 0.1;
+  left: 28%;
+  top: 42%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  background: #FFFFFF;
+  color: #3077C6;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+  padding: 13px 24px;
+}
+
+.destinations__holder:hover .destinations__book{
+  display:block;
+  opacity: 1;
+  transition-delay: 2s;
+}
+
+.destinations__subtitle{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #3077C6;
+  border: 0;
+  text-decoration: none;
+}
+
+.destinations__arrow{
+  display: flex;
+  height: 45px;
+  width: 45px;
+  margin: 50px auto 0;
+  background: url("../pictures/destinations/icons.svg") -112px 0;
+}
+
+/* sign-up */
+.sign-up{
+  background-color: #EAF0F9;
+  margin: 120px 104px 0;
+  padding: 24px 24px 0;
+}
+
+.sign-up__close{
+  margin: 0 0 0 auto;
+  height: 26px;
+  width: 26px;
+  background: url("../pictures/destinations/icons.svg") -86px 0;
+  color: #BFBFBF;
+}
+
+.sign-up__rectangle{
+  display: flex;
+  align-items: center;
+  padding: 0 0 52px;
+}
+
+.sign-up__user{
+  height: 86px;
+  width: 86px;
+  background: url("../pictures/destinations/icons.svg") 0 0;
+}
+
+.sign-up__rectangle-button-close{
+  flex-direction: column;
+  margin: 0 auto 0 24px;
+}
+
+.sign-up__text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 24px;
+  line-height: 1.17em;
+  color: #383838;
+}
+
+.sign-up__button{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  background: #FFFFFF;
+  color: #3077C6;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+  width: 128px;
+  text-align: center;
+  padding: 12px 0;
+  margin: 21px 0 0;
+}
+
 /* footer */
 .footer {
   display: block;
