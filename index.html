@@ -152,44 +152,53 @@
     <section class="destinations">
       <h2 class="destinations__heading">The best destinations</h2>
       <div class="destinations__tab">
-        <button class="destinations__tab-button1">Regions</button>
-        <button class="destinations__tab-button2">Cities</button>
-        <button class="destinations__tab-button3">Places of interest</button>
+        <button class="destinations__tab-button1 destinations-tab-button">Regions</button>
+        <button class="destinations__tab-button2 destinations-tab-button">Cities</button>
+        <button class="destinations__tab-button3 destinations-tab-button">Places <span class="tab-button3-off">of interest</span></button>
       </div>
-      <div class="destinations__wrapper-regions">
-
-        <div class="col-md-6 col-lg-12 col-6 destinations__wrapper-rectangle">
-          <div class="destinations__holder">
-            <img class="destinations__image" src="../pictures/destinations/maldive.png" alt="Maldives">
+      <div class="destinations__wrapper">
+        <div class="col-lg-12 col-6 destinations__wrapper-rectangle">
+          <div class="destinations__container-image">
+            <img class="destinations__image"
+                 srcset="../pictures/destinations/maldives-360w.png 156w,
+                         ../pictures/destinations/maldive.png 295w"
+                 sizes="(max-width: 360px) 156px,
+                        295px"
+                 src="../pictures/destinations/maldive.png" alt="Maldives">
             <button class="destinations__book">Book now</button>
+            <a class="destinations__subtitle" href="#">Maldives</a>
           </div>
-          <a class="destinations__subtitle" href="#">Maldives</a>
         </div>
 
-        <div class="col-md-6 col-lg-12 col-6 destinations__wrapper-rectangle">
-          <div class="destinations__holder">
-            <img class="destinations__image" src="../pictures/destinations/spain.png" alt="Spain">
+        <div class="col-lg-12 col-6 destinations__wrapper-rectangle">
+          <div class="destinations__container-image">
+            <img class="destinations__image"
+                 srcset="../pictures/destinations/spain-360w.png 156w,
+                         ../pictures/destinations/spain.png 295w"
+                 sizes="(max-width: 360px) 156px,
+                        295px"
+                 src="../pictures/destinations/spain.png" alt="Spain">
             <button class="destinations__book">Book now</button>
+            <a class="destinations__subtitle" href="#">Spain</a>
+            <svg class="destinations__button-arrow2"></svg>
           </div>
-          <a class="destinations__subtitle" href="#">Spain</a>
         </div>
 
-        <div class="col-md-6 col-lg-12 col-6 destinations__wrapper-rectangle">
-          <div class="destinations__holder">
+        <div class="col-lg-12 col-6 destinations__wrapper-rectangle wrapper-rectangle-3">
+          <div class="destinations__container-image">
             <img class="destinations__image" src="../pictures/destinations/norway.png" alt="Norway">
             <button class="destinations__book">Book now</button>
+            <a class="destinations__subtitle" href="#">Norway</a>
           </div>
-          <a class="destinations__subtitle" href="#">Norway</a>
         </div>
 
-        <div class="col-md-6 col-lg-12 col-6 destinations__wrapper-rectangle">
-          <div class="destinations__holder">
+        <div class="col-md-6 col-lg-12 col-6 destinations__wrapper-rectangle wrapper-rectangle-4">
+          <div class="destinations__container-image">
             <img class="destinations__image" src="../pictures/destinations/island.png" alt="Island">
             <button class="destinations__book">Book now</button>
+            <a class="destinations__subtitle" href="#">Island</a>
           </div>
-          <a class="destinations__subtitle" href="#">Island</a>
         </div>
-
       </div>
       <svg class="destinations__arrow"></svg>
     </section>
@@ -200,7 +209,7 @@
         <a class="sign-up__user" href="#"></a>
         <div class="sign-up__rectangle-button-close">
           <p class="sign-up__text">Sign up and get 20% off your first booking</p>
-          <div class="sign-up__button">Sign up</div>
+          <button class="sign-up__button">Sign up</button>
         </div>
       </div>
     </section>

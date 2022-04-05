@@ -410,68 +410,43 @@
   line-height: 1.17em;
   text-align: center;
   color: #383838;
-  margin: 120px;
+  margin: 120px auto 104px;
 }
 
 .destinations__tab {
   display: flex;
-  height: 64px;
   max-width: 622px;
   justify-content:flex-start;
   border-radius: 8px;
   background-color: #F3F3F4;
-  box-sizing: border-box;
 }
 
-.destinations__tab-button1 {
+.destinations-tab-button {
   font-family: "Roboto", sans-serif;
   font-weight: 400;
   font-size: 24px;
   line-height: 1.17em;
+  height: 64px;
   text-align: center;
   color: #383838;
   border-radius: 8px;
   border: 0;
 }
 
-.destinations__tab-button1 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.17em;
-  width: 31%;
-  text-align: center;
+.destinations-tab-button:focus{
   color: #FFFFFF;
-  background-color:#3077C6;
-  border-radius: 8px;
-  border: 0;
+  background: #3077C6;
 }
 
-.destinations__tab-button2 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.17em;
+.destinations__tab-button1,.destinations__tab-button2 {
   width: 31%;
-  text-align: center;
-  color: #383838;
-  border-radius: 8px;
-  border: 0;
 }
 
 .destinations__tab-button3 {
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 1.17em;
   width: 38%;
-  text-align: center;
-  color: #383838;
-  border-radius: 8px;
-  border: 0;
 }
 
-.destinations__wrapper-regions {
+.destinations__wrapper {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -479,61 +454,33 @@
 }
 
 .destinations__wrapper-rectangle {
-  position: relative;
   width: 295px;
-  margin:  65px 0 0 0;
 }
 
-.destinations__holder {
+.destinations__container-image {
+  flex-direction: column;
   position: relative;
   height: 295px;
+  width: 295px;
+  margin: 65px 0 24px;
+}
+
+.destinations__container-image:hover:after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 0;
+  height: 100%;
   width: 100%;
-  margin: 0 0 24px;
+  opacity: 0.5;
+  background-color: #38383866;
+  box-shadow: inset 0 4px 70px #38383866;
 }
 
 .destinations__image {
-  position: relative;
   height: 295px;
   width: 295px;
-}
-
-.destinations__image::before {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 0;
-  background-color: #38383866;
-}
-
-.destinations__image:hover::before {
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  opacity: 1;
-  background-color: #38383866;
-}
-
-.destinations__book {
-  display: none;
-  position: absolute;
-  opacity: 0.1;
-  left: 28%;
-  top: 42%;
-  font-family: "Roboto", sans-serif;
-  font-weight: 400;
-  font-size: 18px;
-  line-height: 1.17em;
-  background: #FFFFFF;
-  color: #3077C6;
-  border: 1px solid #3077C6;
-  border-radius: 8px;
-  padding: 13px 24px;
-}
-
-.destinations__holder:hover .destinations__book{
-  display:block;
-  opacity: 1;
-  transition-delay: 2s;
+  margin: 0 0 24px;
 }
 
 .destinations__subtitle{
@@ -542,15 +489,36 @@
   font-size: 24px;
   line-height: 1.17em;
   color: #3077C6;
-  border: 0;
   text-decoration: none;
+  margin-top: 24px;
+}
+
+.destinations__book {
+  display: none;
+  position: absolute;
+  left: 28%;
+  top: 42%;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  background-color: #FFFFFF;
+  color: #3077C6;
+  border: 1px solid #3077C6;
+  border-radius: 8px;
+  padding: 13px 24px;
+}
+
+.destinations__container-image:hover .destinations__book{
+  display:block;
+  background-color: #FFFFFF;
 }
 
 .destinations__arrow{
   display: flex;
-  height: 45px;
-  width: 45px;
-  margin: 50px auto 0;
+  height: 49px;
+  width: 48px;
+  margin: 76px auto 0;
   background: url("../pictures/destinations/icons.svg") -112px 0;
 }
 
@@ -577,7 +545,7 @@
 
 .sign-up__user{
   height: 86px;
-  width: 86px;
+  min-width: 86px;
   background: url("../pictures/destinations/icons.svg") 0 0;
 }
 
@@ -742,6 +710,31 @@
 
   .homes-guests__button-arrow2, .homes-guests__button-arrow4 {
     display: none;
+  }
+
+  .destinations {
+    display: block;
+    margin: 0 70px;
+    background-color: #FFFFFF;
+  }
+
+  .destinations__tab{
+    display: flex;
+    margin: auto;
+  }
+
+  .destinations__container-image{
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .destinations__subtitle{
+    margin: 0;
+  }
+
+  .sign-up__text{
+    width: 95% ;
   }
 
   .footer__rectangle {
@@ -1040,6 +1033,52 @@
   }
 
   .homes-guests__button-arrow{
+    display: none;
+  }
+
+  .destinations {
+    display: block;
+    margin: 0 17px;
+    background-color: #FFFFFF;
+  }
+
+  .destinations__heading {
+    font-size: 28px;
+    margin: 40px auto 32px;
+  }
+
+  .destinations__tab {
+    display: flex;
+    justify-content: space-between;
+    background-color: #FFFFFF;
+  }
+
+  .destinations-tab-button {
+    font-size: 19px;
+    margin: 0;
+    height: 32px;
+    overflow:hidden;
+    border-radius: 4px;
+    border: 1px solid #F3F3F4;
+    background-color: #FFFFFF;
+  }
+
+  .tab-button3-off{
+    display: none;
+  }
+
+  .destinations__container-image{
+    margin: 24px auto 48px;
+  }
+
+  .destinations__image{
+    margin: 0 0 12px;
+  }
+  .destinations__arrow{
+  display: none;
+  }
+
+  .sign-up{
     display: none;
   }
 
@@ -1395,6 +1434,61 @@
     width: 36px;
     height: 36px;
     background: url("../pictures/Homes guests loves/button-arrow-mobile.svg") 0 0;
+  }
+
+  /* destinations */
+  .destinations__wrapper{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+
+  .destinations__wrapper-rectangle{
+    width: 156px;
+  }
+
+  .destinations-tab-button {
+    width: 99px;
+  }
+
+  .destinations__container-image {
+    position: relative;
+    height: 156px;
+    width: 156px;
+    margin: 24px auto 60px;
+  }
+
+  .destinations__container-image:hover .destinations__book{
+    display: none;
+  }
+
+  .destinations__container-image:hover:after {
+    display: none;
+  }
+
+  .destinations__image {
+    height: 156px;
+    width: 156px;
+  }
+
+  .destinations__button-arrow2 {
+    position: absolute;
+    left: 86%;
+    top: 42%;
+    width: 36px;
+    height: 36px;
+    background: url("../pictures/destinations/icons.svg") -160px 0;
+  }
+
+  .wrapper-rectangle-4, .wrapper-rectangle-3 {
+    display: none;
+  }
+
+  .destinations__image{
+    margin: 0 0 8px;
+  }
+  .destinations__subtitle{
+    font-size: 12px;
   }
 
   /* footer-2-mobile phones*/
