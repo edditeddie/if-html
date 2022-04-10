@@ -1,0 +1,47 @@
+/* --------------------------------
+
+Generated using nucleoapp.com
+
+-------------------------------- */
+.icon {
+    display: inline-block;
+    background-image: url(../icons.svg);
+    background-repeat: no-repeat;
+    flex-shrink: 0;
+}
+
+.icon.icon-ukraine2 {
+    background-position: -0px 0px;
+    height: 16px;
+    width: 16px;
+}
+
+.icon.icon-germany {
+    background-position: -16px 0px;
+    height: 16px;
+    width: 16px;
+}
+
+.icon.icon-usa {
+    background-position: -32px 0px;
+    height: 16px;
+    width: 16px;
+}
+
+.icon.icon-vector {
+    background-position: -48px 0px;
+    height: 54px;
+    width: 54px;
+}
+
+.icon.icon-vector-mobile {
+    background-position: -102px 0px;
+    height: 45px;
+    width: 45px;
+}
+
+.icon.icon-arrow {
+    background-position: -147px 0px;
+    height: 48px;
+    width: 48px;
+} 

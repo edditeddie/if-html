@@ -225,7 +225,6 @@
             </div>
             <a class="destinations__subtitle" href="#">Spain</a>
           </div>
-          <svg class="destinations__button-arrow"></svg>
         </div>
 
         <div class="col-lg-12 col-6 destinations__wrapper-rectangle">
@@ -250,22 +249,204 @@
       </div>
       <svg class="destinations__arrow"></svg>
     </section>
+
     <section class="sign-up">
       <button
         class="sign-up__close"
         aria-label="close a window sign-up"
       ></button>
       <div class="sign-up__rectangle">
-        <img
-          class="sign-up__user"
-          src="../pictures/destinations/user.svg"
-          alt="user"
-        />
+        <svg class="sign-up__user"></svg>
         <div class="sign-up__rectangle-button-close">
-          <p class="sign-up__text">
-            Sign up and get 20% off your first booking
-          </p>
-          <button class="sign-up__button">Sign up</button>
+          <div class="sign-up__text">
+            <span class="sign-up__text-pc"
+              >Sign up and get 20% off your first booking</span
+            >
+            <span class="sign-up__text-mobile"
+              >Sign up in the app and get 20% off your first booking</span
+            >
+          </div>
+          <button class="sign-up__button">
+            <span class="sign-up__button-text-mobile">Install</span>
+            <span class="sign-up__button-text">Sign up</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="guests-reviews">
+      <h2 class="guests-reviews__heading">Guests reviews</h2>
+      <h2 class="guests-reviews__heading-mobile">Reviews</h2>
+      <div class="guests-reviews__wrapper">
+        <div
+          class="col-md-12 col-lg-12 col-12 guests-reviews__wrapper-rectangle"
+        >
+          <div class="guests-reviews__container">
+            <div class="guests-reviews__image">
+              <img
+                srcset="
+                  ../pictures/guests-reviews/ubud bali resort&spa.png 327w,
+                  ../pictures/guests-reviews/ubud bali resort&spa-mobile.png 400w
+                  "
+                sizes="(max-width: 768px) 327px,
+                           400px"
+                src="../pictures/guests-reviews/ubud bali resort&spa.png"
+                alt="Ubud Bali Resort&SPA"
+              />
+              <button class="guests-reviews__price">From 250 USD</button>
+            </div>
+            <div class="guests-reviews__info">
+              <div class="guests-reviews__link-score">
+                <div class="guests-reviews__subtitle">
+                  <p class="guests-reviews__subtitle-hotel">
+                    Ubud Bali Resort&SPA
+                  </p>
+                  <p class="guests-reviews__subtitle-country">
+                    Bali, Indonesia
+                  </p>
+                </div>
+                <div class="guests-reviews__score">
+                  <p class="guests-reviews__rating">9,4</p>
+                  <p class="guests-reviews__number-of-rating">1324 reviews</p>
+                </div>
+              </div>
+              <div class="person">
+                <svg class="person__user"></svg>
+                <div class="person__info">
+                  <p class="person__name">Hanna Ivanova</p>
+                  <div class="person__country">
+                    <div class="person__country-flag-ukraine"></div>
+                    <p class="person__country-text">Ukraine</p>
+                  </div>
+                </div>
+              </div>
+              <p class="guests-reviews__review">
+                Great location, really pleasant and clean rooms, but the thing
+                that makes this such a good place to stay are the staff. All of
+                the people are incredibly helpful and generous with their time
+                and advice.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-12 col-lg-12 col-12 guests-reviews__wrapper-rectangle"
+        >
+          <div class="guests-reviews__container">
+            <div class="guests-reviews__image">
+              <img
+                src="../pictures/guests-reviews/king kong hostel.png"
+                alt="King Kong Hostel"
+              />
+              <button class="guests-reviews__price">From 40 USD</button>
+            </div>
+            <div class="guests-reviews__info">
+              <div class="guests-reviews__link-score">
+                <div class="guests-reviews__subtitle">
+                  <p class="guests-reviews__subtitle-hotel">King Kong Hostel</p>
+                  <p class="guests-reviews__subtitle-country">
+                    Rotterdam, Netherlands
+                  </p>
+                </div>
+                <div class="guests-reviews__score">
+                  <p class="guests-reviews__rating">8,9</p>
+                  <p class="guests-reviews__number-of-rating">2016 reviews</p>
+                </div>
+              </div>
+              <div class="person">
+                <svg class="person__user"></svg>
+                <div class="person__info">
+                  <p class="person__name">Adam Smith</p>
+                  <div class="person__country">
+                    <div class="person__country-flag-usa"></div>
+                    <p class="person__country-text">USA</p>
+                  </div>
+                </div>
+              </div>
+              <p class="guests-reviews__review">
+                I've been in this hostel for a month and here is the best hostel
+                of all<br />
+                Excellent management of excellent and ethical staff and bedrooms
+                Bathrooms are always clean and excellent<br />
+                Most importantly, those who work here are kind and good-natured.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-12 col-lg-12 col-12 guests-reviews__wrapper-rectangle"
+        >
+          <div class="guests-reviews__container">
+            <div class="guests-reviews__image">
+              <img
+                src="../pictures/guests-reviews/rokoko hotel.png"
+                alt="Rokoko Hotel"
+              />
+              <button class="guests-reviews__price">From 100 USD</button>
+            </div>
+            <div class="guests-reviews__info">
+              <div class="guests-reviews__link-score">
+                <div class="guests-reviews__subtitle">
+                  <p class="guests-reviews__subtitle-hotel">Rokoko Hotel</p>
+                  <p class="guests-reviews__subtitle-country">
+                    Ourika, Marocco
+                  </p>
+                </div>
+                <div class="guests-reviews__score">
+                  <p class="guests-reviews__rating">9,1</p>
+                  <p class="guests-reviews__number-of-rating">815 reviews</p>
+                </div>
+              </div>
+              <div class="person">
+                <svg class="person__user"></svg>
+                <div class="person__info">
+                  <p class="person__name">Anika Messer</p>
+                  <div class="person__country">
+                    <div class="person__country-flag-germany"></div>
+                    <p class="person__country-text">Germany</p>
+                  </div>
+                </div>
+              </div>
+              <p class="guests-reviews__review">
+                Efficient, friendly, professional, and appropriately attentive.
+                Great hotel in a great location. Easy access to all the
+                surrounding historical sites. Staff is fantastic. Will
+                definitely stay at this location during my next stay in Marocco.
+              </p>
+            </div>
+            <svg class="guests-reviews__arrow"></svg>
+          </div>
+        </div>
+      </div>
+      <nav class="guests-reviews__link-container">
+        <button class="guests-reviews__link" href="#"></button>
+        <button class="guests-reviews__link" href="#"></button>
+        <button class="guests-reviews__link" href="#"></button>
+        <button class="guests-reviews__link" href="#"></button>
+      </nav>
+    </section>
+    <section class="sign-up-mobile">
+      <button
+              class="sign-up-mobile__close"
+              aria-label="close a window sign-up"
+      ></button>
+      <div class="sign-up-mobile__rectangle">
+        <svg class="sign-up-mobile__user"></svg>
+        <div class="sign-up-mobile__rectangle-button-close">
+          <div class="sign-up-mobile__text">
+            <span class="sign-up-mobile__text-pc"
+            >Sign up and get 20% off your first booking</span
+            >
+            <span class="sign-up-mobile__text-mobile"
+            >Sign up in the app and get 20% off your first booking</span
+            >
+          </div>
+          <button class="sign-up-mobile__button">
+            <span class="sign-up-mobile__button-text-mobile">Install</span>
+            <span class="sign-up-mobile__button-text">Sign up</span>
+          </button>
         </div>
       </div>
     </section>

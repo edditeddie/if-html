@@ -12,3 +12,9 @@
   src: url("../fonts/Roboto-Regular.woff2") format("woff2");
 }
 
+@font-face {
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 600;
+  src: url("../fonts/Open Sans.woff2") format("woff2");
+}

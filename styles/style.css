@@ -457,7 +457,7 @@
   display: none;
   width: 36px;
   height: 36px;
-  background: url("../pictures/destinations/icons.svg") -160px 0;
+  background: url("../pictures/destinations/icons.svg") -234px 0;
 }
 
 .destinations__subtitle{
@@ -467,7 +467,6 @@
   line-height: 1.17em;
   color: #3077C6;
   text-decoration: none;
-
 }
 
 .destinations__book {
@@ -498,7 +497,7 @@
   height: 49px;
   width: 48px;
   margin: 0 auto;
-  background: url("../pictures/destinations/icons.svg") -112px 0;
+  background: url("../pictures/destinations/icons.svg") -186px 0;
 }
 
 /* sign-up */
@@ -513,7 +512,7 @@
   margin-left: auto;
   height: 26px;
   width: 26px;
-  background: url("../pictures/destinations/icons.svg") -86px 0;
+  background: url("../pictures/destinations/icons.svg") -160px 0;
   color: #BFBFBF;
   border: none;
   padding: 0;
@@ -527,8 +526,8 @@
 
 .sign-up__user{
   height: 86px;
-  min-width: 86px;
-  background: url("../pictures/destinations/icons.svg") 0 0;
+  width: 86px;
+  background: url("../pictures/destinations/icons.svg") -74px 0;
 }
 
 .sign-up__rectangle-button-close{
@@ -544,6 +543,14 @@
   color: #383838;
 }
 
+.sign-up__text-pc{
+  display: block;
+}
+
+.sign-up__text-mobile{
+  display: none;
+}
+
 .sign-up__button{
   font-family: "Roboto", sans-serif;
   font-weight: 400;
@@ -557,6 +564,262 @@
   text-align: center;
   padding: 12px 0;
   margin: 21px 0 0;
+}
+
+.sign-up__button-text-mobile{
+  display: none;
+}
+
+/* guests-reviews */
+.guests-reviews{
+  display: block;
+  margin: 0 104px 120px;
+  background-color: #FFFFFF;
+}
+
+.guests-reviews__heading {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 40px;
+  line-height: 1.17em;
+  text-align: center;
+  color: #383838;
+  margin: 120px auto 0;
+  padding-bottom: 10px;
+}
+
+.guests-reviews__heading-mobile {
+  display: none;
+}
+
+.guests-reviews__wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.guests-reviews__wrapper-rectangle{
+  margin: 104px 0 0;
+  overflow: hidden;
+}
+
+.guests-reviews__container{
+  width: 400px;
+  position: relative;
+}
+
+.guests-reviews__image{
+  height: 400px;
+  width: 100%;
+}
+
+.guests-reviews__image:hover:after {
+  position: absolute;
+  content: " ";
+  left: 0;
+  top: 88%;
+  z-index:1;
+  height: 12%;
+  width: 100%;
+  opacity: 0.7;
+  background-color: #38383866;
+}
+
+.guests-reviews__price {
+  display: none;
+  position: absolute;
+  left: 24px;
+  top: 370px;
+  z-index: 2;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: #FFFFFF;
+  opacity: 1;
+  background-color: transparent;
+  border: none;
+  padding: 0;
+}
+
+.guests-reviews__image:hover .guests-reviews__price{
+  display: block;
+  position: absolute;
+}
+
+.guests-reviews__arrow{
+  display: block;
+  position: sticky;
+  bottom: 72%;
+  left: 94%;
+  width: 48px;
+  height: 48px;
+  background: url("../pictures/guests-reviews/icons.svg") -147px 0;
+}
+
+.guests-reviews__info{
+  background-color: #EAF0F9;
+  padding: 0 24px;
+}
+
+.guests-reviews__info:after{
+  content: "";
+  position: absolute;
+  height: 50%;
+}
+.guests-reviews__info:after {
+  left: 0;
+  right: 0;
+  background-color: #EAF0F9;
+}
+
+.guests-reviews__link-score{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 24px 0;
+}
+
+.guests-reviews__subtitle{
+  display: flex;
+  flex-direction: column;
+}
+
+.guests-reviews__subtitle-hotel{
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: #3077C6;
+}
+
+.guests-reviews__subtitle-country{
+  display: inline-block;
+  justify-content: space-between;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: #3077C6;
+  padding: 16px 0 0;
+}
+
+.guests-reviews__score{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.guests-reviews__rating{
+  display: inline-block;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 1.36em;
+  width: 48px;
+  color: #FFFFFF;
+  background-color: #10367C;
+  text-align: center;
+  padding: 4px 11px;
+  border-radius: 8px;
+}
+
+.guests-reviews__number-of-rating{
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.17em;
+  color: #BFBFBF;
+}
+
+.person{
+  display: flex;
+  flex-direction: row;
+}
+
+.person__user{
+  height: 54px;
+  width: 54px;
+  background: url("../pictures/guests-reviews/icons.svg") -48px 0;
+  margin: 5px;
+}
+
+.person__info{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin: 7px 0 7px 16px;
+}
+
+.person__name{
+  display: inline-block;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+}
+
+.person__country-text{
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: #BFBFBF;
+  margin-left: 6px;
+}
+
+.guests-reviews__review{
+  display: flex;
+  align-items: stretch;
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 1.17em;
+  color: #383838;
+  margin: 17px 0 0;
+  padding: 0 0 66px;
+}
+
+.person__country{
+  display: flex;
+  flex-direction: row;
+}
+
+.person__country-flag-ukraine{
+  height: 16px;
+  width: 15px;
+  background: url("../pictures/guests-reviews/icons.svg") 0 0;
+  margin: auto 0;
+}
+
+.person__country-flag-usa{
+  height: 16px;
+  width: 16px;
+  background: url("../pictures/guests-reviews/icons.svg") -32px 0;
+  margin: auto 0;
+}
+
+.person__country-flag-germany{
+  height: 16px;
+  width: 16px;
+  background: url("../pictures/guests-reviews/icons.svg") -16px 0;
+  margin: auto 0;
+}
+
+.guests-reviews__link-container{
+  display: none;
+}
+
+.guests-reviews__link{
+  display: none;
+}
+
+.sign-up-mobile{
+  display: none;
 }
 
 /* footer */
@@ -721,6 +984,21 @@
 
   .sign-up__text{
     width: 95% ;
+  }
+
+
+  .guests-reviews__wrapper{
+    justify-content: space-between;
+    margin: 0 auto;
+  }
+
+  .guests-reviews__container{
+    margin: 0 auto;
+    flex-wrap: wrap;
+  }
+
+  .guests-reviews__arrow{
+    display: none;
   }
 
   .footer__rectangle {
@@ -1083,6 +1361,150 @@
   }
 
   .sign-up{
+    display: none;
+  }
+
+  .sign-up-mobile{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    background-color: #FFFFFF;
+    margin: 0;
+    padding: 0;
+  }
+
+  .sign-up-mobile__close{
+    margin: 0;
+    padding: 0;
+    height: 16px;
+    width: 16px;
+    background: url("../pictures/destinations/icons.svg") -59px 0;
+    color: #BFBFBF;
+    border: none;
+  }
+
+  .sign-up-mobile__rectangle{
+    display: flex;
+    align-items: center;
+    padding: 0 0;
+  }
+
+  .sign-up-mobile__user{
+    height: 58px;
+    width: 58px;
+    margin: 24px 16px;
+    background: url("../pictures/destinations/icons.svg") 0 0;
+  }
+
+  .sign-up-mobile__rectangle-button-close{
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+  }
+
+  .sign-up-mobile__text{
+    margin: auto;
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 1.17em;
+    color: #383838;
+    width: 168px;
+    height: 28px;
+  }
+
+  .sign-up-mobile__text-pc{
+    display: none;
+  }
+
+  .sign-up-mobile__text-mobile{
+    display: block;
+  }
+
+  .sign-up-mobile__button{
+    font-family: "Roboto", sans-serif;
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 1.17em;
+    background: transparent;
+    color: #3077C6;
+    border: none;
+    width: 42px;
+    margin: auto 0 auto 16px;
+  }
+
+  .sign-up-mobile__button-text-mobile{
+    display: block;
+    width: 41px;
+  }
+
+  .sign-up-mobile__button-text{
+    display: none;
+  }
+
+  .guests-reviews{
+    display: block;
+    margin: 0 16px 0;
+    background-color: #FFFFFF;
+  }
+
+  .guests-reviews__wrapper-rectangle{
+    margin: 50px 0 0;
+    position: relative;
+    overflow: hidden;
+  }
+
+  .guests-reviews__container{
+    width: 327px;
+    position: relative;
+  }
+
+  .guests-reviews__image{
+    position: relative;
+    width: 327px;
+  }
+
+  .guests-reviews__link-score{
+    padding: 12px 0;
+  }
+
+  .guests-reviews__subtitle-hotel{
+    font-size: 15px;
+  }
+
+  .guests-reviews__subtitle-country{
+    font-size: 15px;
+  }
+
+  .guests-reviews__rating{
+    font-size: 15px;
+  }
+
+  .guests-reviews__number-of-rating{
+    font-size: 12px;
+  }
+
+  .person__user{
+    height: 45px;
+    width: 45px;
+    background: url("../pictures/guests-reviews/icons.svg") -102px 0;
+    margin: 5px;
+  }
+
+  .person__name{
+    font-size: 15px;
+  }
+
+  .person__country-text{
+    font-size: 15px;
+  }
+
+  .guests-reviews__review{
+    font-size: 15px;
+  }
+
+  .guests-reviews__arrow {
     display: none;
   }
 
@@ -1468,6 +1890,7 @@
     top:42%;
   }
 
+
   .destinations__wrapper-rectangle:nth-last-child(-n+2) {
     display: none;
   }
@@ -1478,6 +1901,104 @@
   .destinations__subtitle{
     font-size: 12px;
     margin-bottom: 40px;
+  }
+
+  .sign-up-mobile{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    padding: 0;
+    flex-wrap: nowrap;
+  }
+
+  .sign-up-mobile__user{
+    margin: 24px 16px 24px 0;
+  }
+   .sign-up-mobile__button{
+     font-size: 14px;
+     padding: 0;
+     width: 41px;
+   }
+
+  .guests-reviews{
+    position: relative;
+  }
+  .guests-reviews__heading{
+    display: none;
+  }
+
+  .guests-reviews__heading-mobile{
+    display: block;
+    font-family: "Roboto", sans-serif;
+    font-weight: 500;
+    font-size: 28px;
+    line-height: 1.17em;
+    text-align: center;
+    color: #383838;
+    margin: 120px auto 0;
+    padding-bottom: 10px;
+  }
+
+  .guests-reviews{
+    background: #EAF0F9;
+    margin: 0;
+    padding: 40px 18px 0;
+  }
+
+  .guests-reviews__review{
+    padding: 0;
+  }
+
+  .guests-reviews__rating{
+    padding: 3px 9px;
+  }
+
+  .guests-reviews__heading-mobile{
+    margin: 0;
+    padding: 0;
+  }
+
+  .guests-reviews__wrapper-rectangle{
+    margin: 32px 0;
+  }
+
+  .guests-reviews__subtitle-country{
+    padding: 8px 0 0;
+  }
+
+  .guests-reviews__info{
+    padding: 0;
+  }
+
+  .guests-reviews__info:after{
+    display: none;
+  }
+  .guests-reviews__wrapper-rectangle:nth-last-child(-n+2) {
+    display: none;
+  }
+
+  .guests-reviews__link-container{
+    display: flex;
+    justify-content: space-between;
+    width: 56px;
+    margin: auto;
+    padding: 0 0 40px;
+  }
+
+  .guests-reviews__link{
+    display: block;
+    height: 8px;
+    width: 8px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  .guests-reviews__link:focus{
+    background: #333333;
   }
 
   /* footer-2-mobile phones*/
