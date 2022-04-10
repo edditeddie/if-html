@@ -600,8 +600,9 @@
 }
 
 .guests-reviews__wrapper-rectangle{
+  position: relative;
   margin: 104px 0 0;
-  overflow: hidden;
+  background-color: #EAF0F9;
 }
 
 .guests-reviews__container{
@@ -649,29 +650,16 @@
 }
 
 .guests-reviews__arrow{
-  display: block;
-  position: sticky;
-  bottom: 72%;
-  left: 94%;
+  position: absolute;
+  bottom: 71%;
+  right: -20px;
   width: 48px;
   height: 48px;
   background: url("../pictures/guests-reviews/icons.svg") -147px 0;
 }
 
 .guests-reviews__info{
-  background-color: #EAF0F9;
   padding: 0 24px;
-}
-
-.guests-reviews__info:after{
-  content: "";
-  position: absolute;
-  height: 50%;
-}
-.guests-reviews__info:after {
-  left: 0;
-  right: 0;
-  background-color: #EAF0F9;
 }
 
 .guests-reviews__link-score{
@@ -822,7 +810,6 @@
   display: none;
 }
 
-/* footer */
 .footer {
   display: block;
   padding-bottom: 120px;
@@ -986,6 +973,9 @@
     width: 95% ;
   }
 
+  .guests-reviews__wrapper-rectangle{
+    background-color: #FFFFFF;
+  }
 
   .guests-reviews__wrapper{
     justify-content: space-between;
@@ -995,6 +985,11 @@
   .guests-reviews__container{
     margin: 0 auto;
     flex-wrap: wrap;
+  }
+
+  .guests-reviews__info{
+    background-color: #EAF0F9;
+    padding: 0 0 32px;
   }
 
   .guests-reviews__arrow{
@@ -1101,7 +1096,6 @@
     background: url("../pictures/triphouse/sprite/icons.svg") -317px 0;
     box-sizing: border-box;
   }
-
 
   .triphouse__title {
     display: block;
@@ -1393,7 +1387,7 @@
   .sign-up-mobile__user{
     height: 58px;
     width: 58px;
-    margin: 24px 16px;
+    margin: 24px 16px 24px 0;
     background: url("../pictures/destinations/icons.svg") 0 0;
   }
 
@@ -1437,6 +1431,7 @@
   .sign-up-mobile__button-text-mobile{
     display: block;
     width: 41px;
+    font-size: 14px;
   }
 
   .sign-up-mobile__button-text{
@@ -1445,14 +1440,24 @@
 
   .guests-reviews{
     display: block;
-    margin: 0 16px 0;
-    background-color: #FFFFFF;
+    margin: 0;
+    background-color: #EAF0F9;
+  }
+
+  .guests-reviews__heading{
+    margin: 0;
+    padding: 40px 0 0;
   }
 
   .guests-reviews__wrapper-rectangle{
-    margin: 50px 0 0;
+    margin: 32px 0 0;
     position: relative;
     overflow: hidden;
+    background-color: #EAF0F9;
+  }
+
+  .guests-reviews__wrapper-rectangle:nth-last-child(-n+2) {
+    display: none;
   }
 
   .guests-reviews__container{
@@ -1463,6 +1468,12 @@
   .guests-reviews__image{
     position: relative;
     width: 327px;
+    height: 100%;
+    overflow: hidden;
+  }
+
+  .guests-reviews__info{
+    width: 100%;
   }
 
   .guests-reviews__link-score{
@@ -1502,10 +1513,34 @@
 
   .guests-reviews__review{
     font-size: 15px;
+    padding: 0;
   }
 
   .guests-reviews__arrow {
     display: none;
+  }
+
+  .guests-reviews__link-container{
+    display: flex;
+    justify-content: space-between;
+    width: 56px;
+    margin: auto;
+    padding: 0 0 40px;
+  }
+
+  .guests-reviews__link{
+    display: block;
+    height: 8px;
+    width: 8px;
+    padding: 0;
+    margin: 0;
+    border: 1px solid #333333;
+    border-radius: 8px;
+    background-color: transparent;
+  }
+
+  .guests-reviews__link:focus{
+    background: #333333;
   }
 
   .footer{
@@ -1712,7 +1747,6 @@
     border: none;
   }
 
-  /* offer-mobile phones*/
   .offer {
     display: block;
     padding: 0;
@@ -1890,7 +1924,6 @@
     top:42%;
   }
 
-
   .destinations__wrapper-rectangle:nth-last-child(-n+2) {
     display: none;
   }
@@ -1912,9 +1945,6 @@
     flex-wrap: nowrap;
   }
 
-  .sign-up-mobile__user{
-    margin: 24px 16px 24px 0;
-  }
    .sign-up-mobile__button{
      font-size: 14px;
      padding: 0;
@@ -1946,6 +1976,12 @@
     padding: 40px 18px 0;
   }
 
+
+  .guests-reviews__container{
+    width: 100%;
+    position: relative;
+  }
+
   .guests-reviews__review{
     padding: 0;
   }
@@ -1973,32 +2009,6 @@
 
   .guests-reviews__info:after{
     display: none;
-  }
-  .guests-reviews__wrapper-rectangle:nth-last-child(-n+2) {
-    display: none;
-  }
-
-  .guests-reviews__link-container{
-    display: flex;
-    justify-content: space-between;
-    width: 56px;
-    margin: auto;
-    padding: 0 0 40px;
-  }
-
-  .guests-reviews__link{
-    display: block;
-    height: 8px;
-    width: 8px;
-    padding: 0;
-    margin: 0;
-    border: 1px solid #333333;
-    border-radius: 8px;
-    background-color: transparent;
-  }
-
-  .guests-reviews__link:focus{
-    background: #333333;
   }
 
   /* footer-2-mobile phones*/
