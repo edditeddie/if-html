@@ -81,6 +81,7 @@
         </div>
       </div>
     </section>
+
     <section>
       <div class="offer">
         <h2 class="offer__title">What do we offer</h2>
@@ -105,54 +106,352 @@
         </ul>
       </div>
     </section>
+
     <section class="homes-guests">
       <h2 class="homes-guests__heading">Homes guests loves</h2>
       <div class="homes-guests__wrapper">
-
         <div class="col-md-6 col-lg-12 col-6 homes-guests__container">
           <div class="homes-guests__rectangle">
-            <svg class="homes-guests__image1"></svg>
-            <a class="homes-guests__subtitle1" href="#">Hotel Leopold</a>
-            <figcaption class="homes-guests__subtitle2">
+            <img
+              class="homes-guests__image"
+              srcset="../pictures/Homes guests loves/1-mobile.png 155w,
+                         ../pictures/Homes guests loves/1.png 295w"
+              sizes="(max-width: 360px) 156px,
+                        295px"
+              src="../pictures/Homes guests loves/1.png"
+              alt="Hotel Leopold"
+            />
+            <a class="homes-guests__subtitle-link" href="#">Hotel Leopold</a>
+            <figcaption class="homes-guests__subtitle-caption">
               Saint Petersburg, Russia
             </figcaption>
           </div>
         </div>
-
         <div class="col-md-6 col-lg-12 col-6 homes-guests__container">
           <div class="homes-guests__rectangle">
-            <svg class="homes-guests__image2"></svg>
-            <a class="homes-guests__subtitle1" href="#">Apartment Sunshine</a>
-            <div class="homes-guests__subtitle2">
+            <img
+              class="homes-guests__image"
+              srcset="../pictures/Homes guests loves/2-mobile.png 155w,
+                         ../pictures/Homes guests loves/2.png 295w"
+              sizes="(max-width: 360px) 156px,
+                        295px"
+              src="../pictures/Homes guests loves/2.png"
+              alt="Apartment Sunshine"
+            />
+            <a class="homes-guests__subtitle-link" href="#"
+              >Apartment Sunshine</a
+            >
+            <div class="homes-guests__subtitle-caption">
               Santa Cruz de Tenerife, Spain
             </div>
             <svg class="homes-guests__button-arrow2"></svg>
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-12 col-6 homes-guests__container homes-container-none">
+        <div
+          class="col-md-6 col-lg-12 col-6 homes-guests__container homes-container-none"
+        >
           <div class="homes-guests__rectangle">
-            <svg class="homes-guests__image3"></svg>
-            <a class="homes-guests__subtitle1" href="#">Villa Kunerad</a>
-            <div class="homes-guests__subtitle2">
+            <img
+              class="homes-guests__image"
+              src="../pictures/Homes guests loves/3.png"
+              alt="Villa Kunerad"
+            />
+            <a class="homes-guests__subtitle-link" href="#">Villa Kunerad</a>
+            <div class="homes-guests__subtitle-caption">
               Vysokie Tatry, Slowakia
             </div>
           </div>
         </div>
-
-        <div class="col-md-6 col-lg-12 col-6 homes-guests__container homes-container-none">
+        <div
+          class="col-md-6 col-lg-12 col-6 homes-guests__container homes-container-none"
+        >
           <div class="homes-guests__rectangle">
-            <svg class="homes-guests__image4"></svg>
-            <a class="homes-guests__subtitle1" href="#">Hostel Friendship</a>
-            <div class="homes-guests__subtitle2">
-              Berlin, Germany
-            </div>
+            <img
+              class="homes-guests__image"
+              src="../pictures/Homes guests loves/4.png"
+              alt="Hostel Friendship"
+            />
+            <a class="homes-guests__subtitle-link" href="#"
+              >Hostel Friendship</a
+            >
+            <div class="homes-guests__subtitle-caption">Berlin, Germany</div>
             <svg class="homes-guests__button-arrow4"></svg>
           </div>
         </div>
-
       </div>
     </section>
+
+    <section class="destinations">
+      <h2 class="destinations__heading">The best destinations</h2>
+      <div class="destinations__tab">
+        <button class="destinations__tab-button">Regions</button>
+        <button class="destinations__tab-button">Cities</button>
+        <button class="destinations__tab-button">
+          Places <span class="tab-button-off">of interest</span>
+        </button>
+      </div>
+      <div class="destinations__wrapper">
+        <div class="col-lg-12 col-6 destinations__wrapper-rectangle">
+          <div class="destinations__container-image">
+            <div class="destinations__image">
+              <img
+                srcset="
+                  ../pictures/destinations/maldives-360w.png 156w,
+                  ../pictures/destinations/maldive.png       295w
+                "
+                sizes="(max-width: 360px) 156px,
+                        295px"
+                src="../pictures/destinations/maldive.png"
+                alt="Maldives"
+              />
+              <button class="destinations__book">Book now</button>
+            </div>
+            <a class="destinations__subtitle" href="#">Maldives</a>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-6 destinations__wrapper-rectangle">
+          <div class="destinations__container-image">
+            <div class="destinations__image">
+              <img
+                srcset="
+                  ../pictures/destinations/spain-360w.png 156w,
+                  ../pictures/destinations/spain.png      295w
+                "
+                sizes="(max-width: 360px) 156px,
+                        295px"
+                src="../pictures/destinations/spain.png"
+                alt="Spain"
+              />
+              <button class="destinations__book">Book now</button>
+              <svg class="destinations__button-arrow"></svg>
+            </div>
+            <a class="destinations__subtitle" href="#">Spain</a>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-6 destinations__wrapper-rectangle">
+          <div class="destinations__container-image">
+            <div class="destinations__image">
+              <img src="../pictures/destinations/norway.png" alt="Norway" />
+              <button class="destinations__book">Book now</button>
+            </div>
+            <a class="destinations__subtitle" href="#">Norway</a>
+          </div>
+        </div>
+
+        <div class="col-lg-12 col-6 destinations__wrapper-rectangle">
+          <div class="destinations__container-image">
+            <div class="destinations__image">
+              <img src="../pictures/destinations/island.png" alt="Island" />
+              <button class="destinations__book">Book now</button>
+            </div>
+            <a class="destinations__subtitle" href="#">Island</a>
+          </div>
+        </div>
+      </div>
+      <svg class="destinations__arrow"></svg>
+    </section>
+
+    <section class="sign-up">
+      <button
+        class="sign-up__close"
+        aria-label="close a window sign-up"
+      ></button>
+      <div class="sign-up__rectangle">
+        <svg class="sign-up__user"></svg>
+        <div class="sign-up__rectangle-button-close">
+          <div class="sign-up__text">
+            <span class="sign-up__text-pc"
+              >Sign up and get 20% off your first booking</span
+            >
+            <span class="sign-up__text-mobile"
+              >Sign up in the app and get 20% off your first booking</span
+            >
+          </div>
+          <button class="sign-up__button">
+            <span class="sign-up__button-text-mobile">Install</span>
+            <span class="sign-up__button-text">Sign up</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
+    <section class="guests-reviews">
+      <h2 class="guests-reviews__heading">Guests reviews</h2>
+      <h2 class="guests-reviews__heading-mobile">Reviews</h2>
+      <div class="guests-reviews__wrapper">
+        <div
+          class="col-md-12 col-lg-12 col-12 guests-reviews__wrapper-rectangle"
+        >
+          <div class="guests-reviews__container">
+            <div class="guests-reviews__image">
+              <img
+                class="guests-reviews__image-pic"
+                src="../pictures/guests-reviews/ubud bali resort&spa.png"
+                alt="Ubud Bali Resort&SPA"
+              />
+              <button class="guests-reviews__price">From 250 USD</button>
+            </div>
+            <div class="guests-reviews__info">
+              <div class="guests-reviews__link-score">
+                <div class="guests-reviews__subtitle">
+                  <p class="guests-reviews__subtitle-hotel">
+                    Ubud Bali Resort&SPA
+                  </p>
+                  <p class="guests-reviews__subtitle-country">
+                    Bali, Indonesia
+                  </p>
+                </div>
+                <div class="guests-reviews__score">
+                  <p class="guests-reviews__rating">9,4</p>
+                  <p class="guests-reviews__number-of-rating">1324 reviews</p>
+                </div>
+              </div>
+              <div class="person">
+                <svg class="person__user"></svg>
+                <div class="person__info">
+                  <p class="person__name">Hanna Ivanova</p>
+                  <div class="person__country">
+                    <div class="person__country-flag-ukraine"></div>
+                    <p class="person__country-text">Ukraine</p>
+                  </div>
+                </div>
+              </div>
+              <p class="guests-reviews__review">
+                Great location, really pleasant and clean rooms, but the thing
+                that makes this such a good place to stay are the staff. All of
+                the people are incredibly helpful and generous with their time
+                and advice.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-12 col-lg-12 col-12 guests-reviews__wrapper-rectangle"
+        >
+          <div class="guests-reviews__container">
+            <div class="guests-reviews__image">
+              <img
+                class="guests-reviews__image-pic"
+                src="../pictures/guests-reviews/king kong hostel.png"
+                alt="King Kong Hostel"
+              />
+              <button class="guests-reviews__price">From 40 USD</button>
+            </div>
+            <div class="guests-reviews__info">
+              <div class="guests-reviews__link-score">
+                <div class="guests-reviews__subtitle">
+                  <p class="guests-reviews__subtitle-hotel">King Kong Hostel</p>
+                  <p class="guests-reviews__subtitle-country">
+                    Rotterdam, Netherlands
+                  </p>
+                </div>
+                <div class="guests-reviews__score">
+                  <p class="guests-reviews__rating">8,9</p>
+                  <p class="guests-reviews__number-of-rating">2016 reviews</p>
+                </div>
+              </div>
+              <div class="person">
+                <svg class="person__user"></svg>
+                <div class="person__info">
+                  <p class="person__name">Adam Smith</p>
+                  <div class="person__country">
+                    <div class="person__country-flag-usa"></div>
+                    <p class="person__country-text">USA</p>
+                  </div>
+                </div>
+              </div>
+              <p class="guests-reviews__review">
+                I've been in this hostel for a month and here is the best hostel
+                of all<br />
+                Excellent management of excellent and ethical staff and bedrooms
+                Bathrooms are always clean and excellent<br />
+                Most importantly, those who work here are kind and good-natured.
+              </p>
+            </div>
+          </div>
+        </div>
+
+        <div
+          class="col-md-12 col-lg-12 col-12 guests-reviews__wrapper-rectangle"
+        >
+          <div class="guests-reviews__container">
+            <div class="guests-reviews__image">
+              <img
+                class="guests-reviews__image-pic"
+                src="../pictures/guests-reviews/rokoko hotel.png"
+                alt="Rokoko Hotel"
+              />
+              <button class="guests-reviews__price">From 100 USD</button>
+            </div>
+            <div class="guests-reviews__info">
+              <div class="guests-reviews__link-score">
+                <div class="guests-reviews__subtitle">
+                  <p class="guests-reviews__subtitle-hotel">Rokoko Hotel</p>
+                  <p class="guests-reviews__subtitle-country">
+                    Ourika, Marocco
+                  </p>
+                </div>
+                <div class="guests-reviews__score">
+                  <p class="guests-reviews__rating">9,1</p>
+                  <p class="guests-reviews__number-of-rating">815 reviews</p>
+                </div>
+              </div>
+              <div class="person">
+                <svg class="person__user"></svg>
+                <div class="person__info">
+                  <p class="person__name">Anika Messer</p>
+                  <div class="person__country">
+                    <div class="person__country-flag-germany"></div>
+                    <p class="person__country-text">Germany</p>
+                  </div>
+                </div>
+              </div>
+              <p class="guests-reviews__review">
+                Efficient, friendly, professional, and appropriately attentive.
+                Great hotel in a great location. Easy access to all the
+                surrounding historical sites. Staff is fantastic. Will
+                definitely stay at this location during my next stay in Marocco.
+              </p>
+            </div>
+          </div>
+          <div class="guests-reviews__arrow"></div>
+        </div>
+      </div>
+      <nav class="guests-reviews__link-container">
+        <button class="guests-reviews__link"></button>
+        <button class="guests-reviews__link"></button>
+        <button class="guests-reviews__link"></button>
+        <button class="guests-reviews__link"></button>
+      </nav>
+    </section>
+
+    <section class="sign-up-mobile">
+      <button
+        class="sign-up-mobile__close"
+        aria-label="close a window sign-up"
+      ></button>
+      <div class="sign-up-mobile__rectangle">
+        <svg class="sign-up-mobile__user"></svg>
+        <div class="sign-up-mobile__rectangle-button-close">
+          <div class="sign-up-mobile__text">
+            <span class="sign-up-mobile__text-pc"
+              >Sign up and get 20% off your first booking</span
+            >
+            <span class="sign-up-mobile__text-mobile"
+              >Sign up in the app and get 20% off your first booking</span
+            >
+          </div>
+          <button class="sign-up-mobile__button">
+            <span class="sign-up-mobile__button-text-mobile">Install</span>
+            <span class="sign-up-mobile__button-text">Sign up</span>
+          </button>
+        </div>
+      </div>
+    </section>
+
     <footer>
       <div class="footer">
         <div class="footer__logo">h</div>
